@@ -9,7 +9,7 @@
 /* general */
 @import 'general';
 
-/* ======== sections ======== */
+/* ======== index ======== */
 
 /* header */
 @import './sections/header';
@@ -31,6 +31,11 @@
 
 /* footer */
 @import './sections/footer';
+
+/* ======== diag-page ======== */
+
+/* diagnostik-page */
+@import './sections/diagnostik-page';
 
 
 

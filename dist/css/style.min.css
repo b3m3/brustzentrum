@@ -175,7 +175,6 @@ body {
 .container {
   max-width: 90rem;
   margin: 0 auto;
-  outline: 1px solid #000;
 }
 
 .main {
@@ -266,7 +265,7 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* ======== sections ======== */
+/* ======== index ======== */
 /* header */
 .header {
   position: absolute;
@@ -664,6 +663,7 @@ body {
   padding-left: 98px;
   padding-top: 72px;
   padding-bottom: 80px;
+  padding-right: 0.9375rem;
 }
 @media (max-width: 1440px) {
   .diagnostik__info {
@@ -1273,4 +1273,156 @@ body {
 }
 .footer__text {
   line-height: 1.625rem;
+}
+
+/* ======== diag-page ======== */
+/* diagnostik-page */
+.diagnostik-page {
+  overflow: hidden;
+}
+.diagnostik-page__main {
+  padding-bottom: 166px;
+}
+@media (max-width: 1440px) {
+  .diagnostik-page__main {
+    padding-bottom: calc(25px + 141 * ((100vw - 320px) / 1120));
+  }
+}
+.diagnostik-page__top {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1.25rem;
+}
+.diagnostik-page__body {
+  position: relative;
+  z-index: 2;
+  box-shadow: 0px 4px 40px rgba(146, 0, 22, 0.1);
+  border-radius: 2.5rem;
+  background-color: #F5F5F5;
+  max-width: 52.8125rem;
+  color: #000;
+  margin-left: 383px;
+  padding-top: 59px;
+  padding-left: 62px;
+  padding-right: 94px;
+  padding-bottom: 68px;
+  margin-top: -31.5625rem;
+  margin-top: -25.3125rem;
+}
+@media (max-width: 1440px) {
+  .diagnostik-page__body {
+    margin-left: calc(15px + 368 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .diagnostik-page__body {
+    padding-top: calc(15px + 44 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .diagnostik-page__body {
+    padding-left: calc(15px + 47 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .diagnostik-page__body {
+    padding-right: calc(15px + 79 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .diagnostik-page__body {
+    padding-bottom: calc(15px + 53 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 767px) {
+  .diagnostik-page__body {
+    margin-left: 0.9375rem;
+    margin-right: 0.9375rem;
+  }
+}
+
+.top-diagnostik-page__logo {
+  margin-left: 76px;
+  margin-top: 65px;
+  width: 100%;
+  max-width: 10.875rem;
+  min-height: 4.3125rem;
+}
+@media (max-width: 1440px) {
+  .top-diagnostik-page__logo {
+    margin-left: calc(15px + 61 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .top-diagnostik-page__logo {
+    margin-top: calc(90px + -25 * ((100vw - 320px) / 1120));
+  }
+}
+.top-diagnostik-page__bg {
+  width: 100%;
+  max-width: 65.3125rem;
+  min-height: 43.8125rem;
+  margin: 0 -2.9375rem 0 0;
+}
+.top-diagnostik-page__bg img {
+  object-fit: cover;
+}
+
+.body-diagnostik-page__row:nth-child(1) {
+  padding-bottom: 53px;
+}
+@media (max-width: 1440px) {
+  .body-diagnostik-page__row:nth-child(1) {
+    padding-bottom: calc(20px + 33 * ((100vw - 320px) / 1120));
+  }
+}
+.body-diagnostik-page__row:nth-child(2), .body-diagnostik-page__row:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  gap: 1.875rem;
+  max-width: 42.9375rem;
+  padding-bottom: 53px;
+}
+@media (max-width: 1440px) {
+  .body-diagnostik-page__row:nth-child(2), .body-diagnostik-page__row:nth-child(4) {
+    padding-bottom: calc(20px + 33 * ((100vw - 320px) / 1120));
+  }
+}
+.body-diagnostik-page__row:nth-child(3) {
+  display: grid;
+  gap: 0.625rem;
+  grid-template: minmax(11.9375rem, auto)/minmax(auto, 13.875rem) minmax(auto, 13.875rem) minmax(auto, 13.875rem);
+  padding-bottom: 30px;
+}
+@media (max-width: 1440px) {
+  .body-diagnostik-page__row:nth-child(3) {
+    padding-bottom: calc(20px + 10 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 425px) {
+  .body-diagnostik-page__row:nth-child(3) {
+    grid-template: minmax(9.375rem, auto) minmax(9.375rem, auto) minmax(9.375rem, auto)/1fr;
+  }
+}
+.body-diagnostik-page__img {
+  border-radius: 1.25rem;
+  overflow: hidden;
+}
+.body-diagnostik-page__img img {
+  object-fit: cover;
+}
+@media (max-width: 425px) {
+  .body-diagnostik-page__img img {
+    object-position: 0% 0%;
+  }
+}
+.body-diagnostik-page__btn {
+  margin: 0 auto;
+  max-width: 15rem;
+  background: rgba(224, 100, 119, 0.2);
+  color: #E06477;
+}
+.body-diagnostik-page__btn:hover {
+  background: rgba(224, 100, 119, 0.3);
 }

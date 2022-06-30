@@ -24,61 +24,71 @@
       <section class="diagnostik-page">
         <div class="container">
 
-          <div class="diagnostik-page__top top-diagnostik-page">
-            <div class="top-diagnostik-page__logo">
-              <img src="@img/logo.svg" alt="lago">
+          <div class="diagnostik-page__main">
+            <div class="diagnostik-page__top top-diagnostik-page">
+              <div class="top-diagnostik-page__logo ibga">
+                <img src="@img/logo.svg" alt="lago">
+              </div>
+              <div class="top-diagnostik-page__bg ibga">
+                <img src="@img/diagnostik-page/01.jpg" alt="background">
+              </div>
             </div>
-            <div class="top-diagnostik-page__bg">
-              <img src="@img/diagnostik-page/01.jpg" alt="background">
+
+            <div class="diagnostik-page__body body-diagnostik-page">
+              <div class="body-diagnostik-page__row">
+                <h2 class="body-diagnostik-page__title title">Hochspezialisierte Diagnostik und Therapie von
+                  Auffälligkeiten
+                  in der Brust </h2>
+              </div>
+              <div class="body-diagnostik-page__row">
+                <p class="body-diagnostik-page__text text">Sie oder Ihr Arzt haben in Ihrer Brust eine Veränderung
+                  festgestellt, die abgeklärt werden muss. Oder Sie wünschen eine Zweitmeinung, wenn die
+                  Brustkrebserkrankung schon gesichert ist. Sie haben wahrscheinlich nicht nur Angst, sondern auch viele
+                  Fragen. </p>
+                <p class="body-diagnostik-page__text text">Wir stehen Ihnen während der Abklärung und ggfs. für weitere
+                  notwendige Behandlungen aufmerksam und mit unseren professionellen Erfahrungen zur Seite. </p>
+              </div>
+              <div class="body-diagnostik-page__row">
+
+                <div class="body-diagnostik-page__img ibga">
+                  <img src="@img/diagnostik-page/02.png" alt="image">
+                </div>
+
+                <div class="body-diagnostik-page__img ibga">
+                  <img src="@img/diagnostik-page/03.png" alt="image">
+                </div>
+
+                <div class="body-diagnostik-page__img ibga">
+                  <img src="@img/diagnostik-page/04.png" alt="image">
+                </div>
+              </div>
+              <div class="body-diagnostik-page__row">
+                <p class="body-diagnostik-page__text text">Viele Veränderungen der Brust sind gutartig. Wir bieten Ihnen
+                  eine umfangreiche Diagnostik und Therapie bei Brustentzündungen, gutartigen Knoten wie z. B.
+                  Fibroadenomen und Zysten.</p>
+                <p class="body-diagnostik-page__text text">Lautet die Diagnose Brustkrebs, behandeln wir Sie individuell
+                  nach neuesten wissenschaftlichen Erkenntnissen, internationalen Standards und entsprechend den
+                  Leitlinien unserer Fachgesellschaften.</p>
+                <p class="body-diagnostik-page__text text">Wir legen großen Wert auf die Unterstützung unserer
+                  medizinisch-wissenschaftlichen Angebotes durch unser Team spezialisierter Pflege ExpertInnen und (u.
+                  a.
+                  radiologischen) AssistentInnen, welche sich aufmerksam, empathisch und professionell um Sie kümmert.
+                </p>
+              </div>
+              <div class="body-diagnostik-page__row">
+                <a class="body-diagnostik-page__btn btn" href="#">Make an appointment</a>
+              </div>
             </div>
           </div>
 
-          <div class="diagnostik-page__body body-diagnostik-page">
-            <h2 class="body-diagnostik-page__title title">Hochspezialisierte Diagnostik und Therapie von Auffälligkeiten
-              in der Brust </h2>
-
-            <div class="body-diagnostik-page__row">
-              <p class="body-diagnostik-page__text text">Sie oder Ihr Arzt haben in Ihrer Brust eine Veränderung
-                festgestellt, die abgeklärt werden muss. Oder Sie wünschen eine Zweitmeinung, wenn die
-                Brustkrebserkrankung schon gesichert ist. Sie haben wahrscheinlich nicht nur Angst, sondern auch viele
-                Fragen. </p>
-              <p class="body-diagnostik-page__text text">Wir stehen Ihnen während der Abklärung und ggfs. für weitere
-                notwendige Behandlungen aufmerksam und mit unseren professionellen Erfahrungen zur Seite. </p>
-            </div>
-            <div class="body-diagnostik-page__row">
-
-              <div class="body-diagnostik-page__img ibga">
-                <img src="@img/diagnostik-page/02.png" alt="image">
-              </div>
-
-              <div class="body-diagnostik-page__img ibga">
-                <img src="@img/diagnostik-page/03.png" alt="image">
-              </div>
-
-              <div class="body-diagnostik-page__img ibga">
-                <img src="@img/diagnostik-page/04.png" alt="image">
-              </div>
-            </div>
-            <div class="body-diagnostik-page__row">
-              <p class="body-diagnostik-page__text text">Viele Veränderungen der Brust sind gutartig. Wir bieten Ihnen
-                eine umfangreiche Diagnostik und Therapie bei Brustentzündungen, gutartigen Knoten wie z. B.
-                Fibroadenomen und Zysten.</p>
-              <p class="body-diagnostik-page__text text">Lautet die Diagnose Brustkrebs, behandeln wir Sie individuell
-                nach neuesten wissenschaftlichen Erkenntnissen, internationalen Standards und entsprechend den
-                Leitlinien unserer Fachgesellschaften.</p>
-              <p class="body-diagnostik-page__text text">Wir legen großen Wert auf die Unterstützung unserer
-                medizinisch-wissenschaftlichen Angebotes durch unser Team spezialisierter Pflege ExpertInnen und (u. a.
-                radiologischen) AssistentInnen, welche sich aufmerksam, empathisch und professionell um Sie kümmert.</p>
-            </div>
-            <div class="body-diagnostik-page__row">
-              <a class="body-diagnostik-page__btn btn" href="#">Make an appointment</a>
-            </div>
-          </div>
 
         </div>
       </section>
 
     </main>
+
+    <!-- footer -->
+    @@include('html/sections/footer.html', {})
   </div>
 
   <script src="js/app.min.js"></script>
