@@ -15,44 +15,7 @@
   <div class="app" id="app">
 
     <!-- header -->
-    <header class="header">
-      <div class="container">
-        <div class="header__body">
-          <a class="header__mail" href="mailto:brustzentrum@kse-hd.de">brustzentrum@kse-hd.de</a>
-          <a class="header__phone" href="tel:062214886000"><span class="icon-phone"></span> 06221-4886000</a>
-          <a class="header__btn btn" href="#">Appointment</a>
-        </div>
-
-        <div class="menu">
-          <button class="burger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-
-          <div class="menu__wrapp">
-            <div class="menu__scale">
-              <span class="icon-dot"></span>
-            </div>
-
-            <ul class="menu__list">
-              <li><a class="menu__link" href="#werwir">Wer wir sind</a></li>
-              <li><a class="menu__link" href="#diagnostik">Diagnostik</a></li>
-              <li><a class="menu__link" href="#team">Team</a></li>
-              <li><a class="menu__link" href="#verfugen">Wir verfügen über</a></li>
-              <li>
-                <a class="menu__link" href="#kontakt">Kontakt</a>
-                <a class="header__phone menu__phone" href="tel:062214880"><span class="icon-phone"></span> 06221 - 48
-                  80</a>
-                <a class="header__mail menu__mail" href="mailto:brustzentrum@kse-hd.de">brustzentrum@kse-hd.de</a>
-              </li>
-            </ul>
-
-
-          </div>
-        </div>
-      </div>
-    </header>
+    @@include('html/sections/header.html', {})
 
     <!-- main -->
     <main class="main">
@@ -104,7 +67,8 @@
                   Brustkrebserkrankung schon gesichert ist. Sie haben wahrscheinlich nicht nur Angst, sondern auch viele
                   Fragen. Wir stehen Ihnen während der Abklärung und ggfs. für weitere notwendige Behandlungen
                   aufmerksam und mit unseren professionellen Erfahrungen zur Seite. </p>
-                <a class="info-diagnostik__btn btn" href="#"><span>More</span> <span class="icon-arrow-f"></span></a>
+                <a class="info-diagnostik__btn btn" href="diagnostik.html"><span>More</span> <span
+                    class="icon-arrow-f"></span></a>
               </div>
             </div>
 
@@ -246,15 +210,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer sec" id="kontakt">
-      <div class="container">
-        <div class="footer__main">
-          <h2 class="footer__title title">Kontakt: </h2>
-          <p class="footer__text">Notfälle: </p>
-          <p class="footer__text">Anmeldung/Sekretariat: </p>
-        </div>
-      </div>
-    </footer>
+    @@include('html/sections/footer.html', {})
   </div>
 
   <script src="js/app.min.js"></script>

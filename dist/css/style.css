@@ -175,6 +175,7 @@ body {
 .container {
   max-width: 90rem;
   margin: 0 auto;
+  outline: 1px solid #000;
 }
 
 .main {
