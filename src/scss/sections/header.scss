@@ -23,7 +23,17 @@
       opacity: .5;
     }
 
-    @include mobile-l {
+    @include tablet {
+      display: none;
+    }
+  }
+  &__mail {
+    font-weight: 300;
+    font-size: rem(24);
+    line-height: rem(31);
+    color: #FFFFFF;
+
+    @include tablet {
       display: none;
     }
   }

@@ -291,8 +291,19 @@ body {
 .header__phone span {
   opacity: 0.5;
 }
-@media (max-width: 425px) {
+@media (max-width: 767px) {
   .header__phone {
+    display: none;
+  }
+}
+.header__mail {
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.9375rem;
+  color: #FFFFFF;
+}
+@media (max-width: 767px) {
+  .header__mail {
     display: none;
   }
 }
@@ -428,7 +439,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1.875rem;
+    gap: 1.25rem;
   }
 }
 .menu__link {
@@ -443,6 +454,18 @@ body {
 @media (max-width: 86.25rem) {
   .menu__phone {
     display: block;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+}
+.menu__mail {
+  display: none;
+}
+@media (max-width: 86.25rem) {
+  .menu__mail {
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 400;
   }
 }
 

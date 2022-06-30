@@ -137,7 +137,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: rem(30);
+        gap: rem(20);
       }
     }
   }
@@ -149,9 +149,18 @@
   }
   &__phone {
     display: none;
-
     @include mq(rem(1380)) {
       display: block;
+      font-size: rem(18);
+      font-weight: 400;
+    }
+  }
+  &__mail {
+    display: none;
+    @include mq(rem(1380)) {
+      display: block;
+      font-size: rem(18);
+      font-weight: 400;
     }
   }
 }
