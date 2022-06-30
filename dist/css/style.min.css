@@ -169,7 +169,7 @@ body {
   font-family: "Assistant";
   font-weight: 400;
   color: #fff;
-  background-color: #E06477;
+  background-color: #bd5b6a;
 }
 
 .container {
@@ -686,6 +686,12 @@ body {
 .info-diagnostik__btn {
   max-width: 7.75rem;
   background: rgba(207, 96, 113, 0.1);
+  color: #CF6071;
+}
+.info-diagnostik__btn span:last-child {
+  padding: 0.1875rem 0 0 0;
+  font-size: 0.9375rem;
+  color: #E06477;
 }
 .info-diagnostik__btn:hover {
   background: rgba(207, 96, 113, 0.2);

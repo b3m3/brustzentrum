@@ -64,6 +64,15 @@
   &__btn {
     max-width: rem(124);
     background: rgba(207, 96, 113, .1);
+    color: #CF6071;
+
+    & span {
+      &:last-child {
+        padding: rem(3) 0 0 0;
+        font-size: rem(15);
+        color: #E06477;
+      }
+    }
 
     &:hover {
       background: rgba(207, 96, 113, .2);
