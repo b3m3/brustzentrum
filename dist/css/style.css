@@ -711,7 +711,7 @@ body {
   filter: blur(2px);
   object-position: 0% 0%;
   object-fit: cover;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 .team__main {
   display: grid;
