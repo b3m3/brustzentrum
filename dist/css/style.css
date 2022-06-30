@@ -357,7 +357,7 @@ body {
 .menu .burger.active + .menu__wrapp .menu__list {
   left: 0;
 }
-@media (max-width: 78.125rem) {
+@media (max-width: 86.25rem) {
   .menu .burger {
     display: block;
   }
@@ -368,7 +368,7 @@ body {
   left: 8.125rem;
   bottom: 8rem;
 }
-@media (max-width: 78.125rem) {
+@media (max-width: 86.25rem) {
   .menu__wrapp {
     width: 100%;
     height: 100%;
@@ -422,7 +422,7 @@ body {
   flex-direction: column;
   gap: 1.375rem;
 }
-@media (max-width: 78.125rem) {
+@media (max-width: 86.25rem) {
   .menu li:last-child {
     display: flex;
     flex-direction: column;
@@ -440,7 +440,7 @@ body {
 .menu__phone {
   display: none;
 }
-@media (max-width: 78.125rem) {
+@media (max-width: 86.25rem) {
   .menu__phone {
     display: block;
   }

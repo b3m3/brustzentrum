@@ -61,7 +61,7 @@
       }
     }
 
-    @include mq(rem(1250)) {
+    @include mq(rem(1380)) {
       display: block;
     }
   }
@@ -72,7 +72,7 @@
     left: rem(130);
     bottom: rem(128);
   
-    @include mq(rem(1250)) {
+    @include mq(rem(1380)) {
       width: 100%;
       height: 100%;
       left: 0;
@@ -132,7 +132,7 @@
   }
   & li {
     &:last-child {
-      @include mq(rem(1250)) {
+      @include mq(rem(1380)) {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -150,7 +150,7 @@
   &__phone {
     display: none;
 
-    @include mq(rem(1250)) {
+    @include mq(rem(1380)) {
       display: block;
     }
   }
