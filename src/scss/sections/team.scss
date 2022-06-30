@@ -1,0 +1,114 @@
+.team {
+  &__wrapp {
+    position: relative;
+  }
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0.8;
+    filter: blur(2px);
+    object-position: 0% 0%;
+    object-fit: cover;
+    transition: .2s;
+  }
+  &__main {
+    display: grid;
+    justify-content: end;
+    @include fit('gap', 61, 20, 1);
+    @include fit('padding-top', 202, 50, 1);
+    @include fit('padding-bottom', 448, 50, 1);
+    @include fit('padding-right', 77, 10, 1);
+    padding-left: rem(15);
+    grid-template: minmax(rem(366), auto) / minmax(auto, rem(527)) minmax(auto, rem(426));
+
+    @include laptop {
+      padding: rem(20);
+      grid-template: minmax(rem(366), auto) auto / 1fr;
+    }
+
+    @include mq(rem(550)) {
+      grid-template: minmax(rem(600), auto) auto / 1fr;
+    }
+  }
+  &__images {
+    display: grid;
+    height: 100%;
+    @include fit('gap', 27, 15, 1);
+    grid-template: 1fr / 1fr 1fr;
+
+    @include mq(rem(550)) {
+      grid-template: 1fr 1fr / 1fr;
+    }
+  }
+  &__info {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: rem(30);
+  }
+}
+
+.images-team {
+  &__img {
+    border-radius: rem(20);
+    overflow: hidden;
+    height: 100%;
+
+    &::before {
+      position: absolute;
+      z-index: 2;
+      content: '';
+      width: 100%;
+      height: rem(98);
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #FFFFFF 72.32%);
+    }
+
+    & img {
+      object-fit: cover;
+    }
+
+    @include laptop {
+      max-width: rem(246);
+      margin: 0 auto;
+    }
+  }
+  &__row {
+    position: absolute;
+    z-index: 3;
+    bottom: rem(9);
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__name {
+    font-size: rem(16);
+    line-height: rem(21);
+    color: #34171B;
+  }
+}
+
+.info-team {
+  &__btn {
+    gap: rem(13);
+    max-width: rem(137);
+    margin-top: rem(18);
+    background: rgba(255, 255, 255, .1);
+
+    & span {
+      padding-bottom: rem(4);
+
+      &::before {
+        color: #fff;
+        font-size: rem(15);
+      }
+    }
+  }
+}

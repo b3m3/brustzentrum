@@ -1,0 +1,24 @@
+@font-face {font-family: 'icomoon';src: url('../fonts/icomoon.eot?wkzcr');src: url('../fonts/icomoon.eot?wkzcr#iefix') format('embedded-opentype'),url('../fonts/icomoon.woff?wkzcr') format('woff'),url('../fonts/icomoon.svg?wkzcr#icomoon') format('svg');font-weight: normal;font-style: normal;font-display: block;}[class^="icon-"], [class*=" icon-"] {font-family: 'icomoon';font-style: normal;font-weight: normal;font-variant: normal;text-transform: none;line-height: 1;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+/* ICON CLASS */
+
+.icon-phone:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-dot:before {
+  content: "\e900";
+  color: #e06477;
+}
+.icon-arrow-b:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-arrow-l:before {
+  content: "\e902";
+  color: #cf6071;
+}
+.icon-arrow-f:before {
+  content: "\e903";
+  color: #e06477;
+}

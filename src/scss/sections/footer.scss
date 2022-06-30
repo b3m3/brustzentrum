@@ -1,0 +1,15 @@
+.footer {
+  &__main {
+    @include fit('padding-top', 48, 25, 1);
+    @include fit('padding-bottom', 245, 50, 1);
+    @include fit('padding-left', 295, 15, 1);
+    padding-right: rem(15);
+
+    display: flex;
+    flex-direction: column;
+    gap: rem(20);
+  }
+  &__text {
+    line-height: rem(26);
+  }
+}

@@ -1,0 +1,36 @@
+@import 'lib/resetstyle';
+@import 'lib/mixins';
+@import 'fonts';
+@import 'icon-fonts';
+
+/* settings */
+@import 'settings';
+
+/* general */
+@import 'general';
+
+/* ======== sections ======== */
+
+/* header */
+@import './sections/header';
+
+/* menu */
+@import './sections/menu';
+
+/* werwir */
+@import './sections/werwir';
+
+/* diagnostik */
+@import './sections/diagnostik';
+
+/* team */
+@import './sections/team';
+
+/* verfugen */
+@import './sections/verfugen';
+
+/* footer */
+@import './sections/footer';
+
+
+
