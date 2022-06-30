@@ -149,7 +149,7 @@
   }
   &__phone {
     display: none;
-    @include mq(rem(1380)) {
+    @include tablet {
       display: block;
       font-size: rem(18);
       font-weight: 400;
@@ -157,7 +157,7 @@
   }
   &__mail {
     display: none;
-    @include mq(rem(1380)) {
+    @include tablet {
       display: block;
       font-size: rem(18);
       font-weight: 400;
