@@ -1,7 +1,6 @@
 const parallax = () => {
   const section = document.querySelector('.team');
   const background = document.querySelector('.team__bg');
-
   const clientHeight = document.documentElement.clientHeight;
   
   const distance = () => 
@@ -21,9 +20,10 @@ const parallax = () => {
     }
   };
 
-  checkSize();
-
-  window.addEventListener('resize', checkSize);
+  if (document.querySelector('.team')) {
+    checkSize();
+    window.addEventListener('resize', checkSize);
+  }
 };
 
 export default parallax;

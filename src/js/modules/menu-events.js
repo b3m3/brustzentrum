@@ -1,13 +1,10 @@
-const pageScrollEvents = () => {
+const menuEvents = () => {
+  const sections = document.querySelectorAll('.sec');
+  const scale = document.querySelector('.menu__scale span');
+  const links = document.querySelectorAll('.menu__link');
+  const lvl = [12, 62, 110, 157, 205];
 
   const scrollMenu = () => {
-    const sections = document.querySelectorAll('.sec');
-
-    const scale = document.querySelector('.menu__scale span');
-    const links = document.querySelectorAll('.menu__link');
-
-    const lvl = [12, 62, 110, 157, 205];
-  
     if(sections.length > 0) {
       const offset = (el) => {
         const rect = el.getBoundingClientRect();
@@ -35,9 +32,8 @@ const pageScrollEvents = () => {
   
           if ((window.pageYOffset > sectionOffset - sectionPoint) && 
               window.pageYOffset < (sectionOffset + sectionHeight)) {
-                
-            links.forEach(link => link.style.fontWeight = '400');
 
+            links.forEach(link => link.style.fontWeight = '400');
             scale.style.top = `${lvl[index]}px`;
             links[index].style.fontWeight = '700';
           }
@@ -48,9 +44,28 @@ const pageScrollEvents = () => {
     }
   };
 
-  scrollMenu();
+  if (document.querySelector('.diagnostik-page')) {
+    links.forEach((link, i) => {
+      
+      if (link.textContent === 'Diagnostik') {
+        links.forEach(link => link.style.fontWeight = '400');
+        link.style.fontWeight = '700';
+        scale.style.top = `${lvl[i]}px`;
+      }
 
-  window.addEventListener('scroll', scrollMenu);
+      if (link.textContent !== 'Diagnostik') {
+        link.addEventListener('click', () => {
+          location.href='index.html';
+        });
+      }
+    });
+  }
+
+  if (document.querySelector('.werwir')) {
+    scrollMenu();
+  
+    window.addEventListener('scroll', scrollMenu);
+  }
 };
 
-export default pageScrollEvents;
+export default menuEvents;
