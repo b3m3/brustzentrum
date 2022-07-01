@@ -89,13 +89,6 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Assistant";
-  font-display: swap;
   src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
@@ -105,6 +98,13 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
   src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Assistant";
+  font-display: swap;
+  src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -1772,6 +1772,7 @@ body {
   gap: 1.875rem;
   padding-left: 423px;
   padding-top: 41px;
+  padding-bottom: 50px;
 }
 @media (max-width: 1440px) {
   .team-page__body {
@@ -1781,6 +1782,11 @@ body {
 @media (max-width: 1440px) {
   .team-page__body {
     padding-top: calc(30px + 11 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .team-page__body {
+    padding-bottom: calc(25px + 25 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1024px) {
@@ -1794,6 +1800,32 @@ body {
 .team-page__row_min {
   max-width: 51.375rem;
 }
+.team-page__drs {
+  max-width: 64.875rem;
+  padding-top: 5px;
+  padding-bottom: 20px;
+  margin-right: -21px;
+}
+@media (max-width: 1440px) {
+  .team-page__drs {
+    padding-top: calc(0px + 5 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .team-page__drs {
+    padding-bottom: calc(0px + 20 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .team-page__drs {
+    margin-right: calc(15px + -36 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) {
+  .team-page__drs {
+    margin-right: 0rem;
+  }
+}
 .team-page__hover {
   position: relative;
   z-index: 2;
@@ -1806,6 +1838,7 @@ body {
   flex-direction: column;
   gap: 1.25rem;
   height: 0;
+  opacity: 0;
 }
 .team-page__hover.show-info {
   height: unset;
@@ -1814,6 +1847,7 @@ body {
   padding-right: 146px;
   padding-bottom: 110px;
   margin-top: -13.125rem;
+  opacity: 1;
 }
 @media (max-width: 1440px) {
   .team-page__hover.show-info {
@@ -1834,6 +1868,9 @@ body {
   .team-page__hover.show-info {
     padding-bottom: calc(15px + 95 * ((100vw - 320px) / 1120));
   }
+}
+.team-page__hover.show-info .hover-team-page__pointer {
+  opacity: 1;
 }
 @media (max-width: 767px) {
   .team-page__hover.show-info {
@@ -1856,41 +1893,13 @@ body {
   }
 }
 
-.drs-team-page__wrapp {
-  padding-top: 5px;
-  padding-bottom: 20px;
-  margin-right: -21px;
-  display: flex;
-}
-@media (max-width: 1440px) {
-  .drs-team-page__wrapp {
-    padding-top: calc(0px + 5 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .drs-team-page__wrapp {
-    padding-bottom: calc(0px + 20 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .drs-team-page__wrapp {
-    margin-right: calc(15px + -36 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .drs-team-page__wrapp {
-    margin-right: 0rem;
-  }
-}
 .drs-team-page__img {
-  width: 224px;
+  max-width: 224px;
   height: 373px;
 }
 .drs-team-page__img img {
   width: 100%;
   height: 100%;
-  max-width: 224px;
-  max-height: 373px;
   object-fit: cover;
 }
 
@@ -1899,6 +1908,7 @@ body {
   display: block;
   left: 38%;
   top: -1.5625rem;
+  transition: 0.5s ease;
   width: 0;
   height: 0;
   border-top: 1.5625rem solid transparent;

@@ -44,22 +44,27 @@ const menuEvents = () => {
     }
   };
 
-  if (document.querySelector('.diagnostik-page')) {
-    links.forEach((link, i) => {
-      
-      if (link.textContent === 'Diagnostik') {
-        links.forEach(link => link.style.fontWeight = '400');
-        link.style.fontWeight = '700';
-        scale.style.top = `${lvl[i]}px`;
-      }
+  const activeLink = (selector, linkText) => {
+    if (document.querySelector(selector)) {
+      links.forEach((link, i) => {
+        
+        if (link.textContent === linkText) {
+          links.forEach(link => link.style.fontWeight = '400');
+          link.style.fontWeight = '700';
+          scale.style.top = `${lvl[i]}px`;
+        }
+  
+        if (link.textContent !== linkText) {
+          link.addEventListener('click', () => {
+            location.href='index.html';
+          });
+        }
+      });
+    }
+  };
 
-      if (link.textContent !== 'Diagnostik') {
-        link.addEventListener('click', () => {
-          location.href='index.html';
-        });
-      }
-    });
-  }
+  activeLink('.diagnostik-page', 'Diagnostik');
+  activeLink('.team-page', 'Team');
 
   if (document.querySelector('.werwir')) {
     scrollMenu();

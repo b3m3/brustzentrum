@@ -20,6 +20,7 @@
     gap: rem(30);
     @include fit('padding-left', 423, -423, 1);
     @include fit('padding-top', 41, 30, 1);
+    @include fit('padding-bottom', 50, 25, 1);
 
     @include laptop {
       padding: rem(30) rem(15) rem(25) rem(15);
@@ -32,7 +33,14 @@
     }
   }
   &__drs {
+    max-width: rem(1038);
+    @include fit('padding-top', 5, 0, 1);
+    @include fit('padding-bottom', 20, 0, 1);
+    @include fit('margin-right', -21, 15, 1);
 
+    @include laptop {
+      margin-right: rem(0);
+    }
   }
   &__hover {
     position: relative;
@@ -48,6 +56,7 @@
     gap: rem(20);
     
     height: 0;
+    opacity: 0;
 
     &.show-info {
       height: unset;
@@ -56,6 +65,11 @@
       @include fit('padding-right', 146, 15, 1);
       @include fit('padding-bottom', 110, 15, 1);
       margin-top: rem(-210);
+      opacity: 1;
+
+      .hover-team-page__pointer {
+        opacity: 1;
+      }
 
       @include tablet {
         @include fit('margin-top', -30, -290, 1);
@@ -69,25 +83,13 @@
 }
 
 .drs-team-page {
-  &__wrapp {
-    @include fit('padding-top', 5, 0, 1);
-    @include fit('padding-bottom', 20, 0, 1);
-    @include fit('margin-right', -21, 15, 1);
-
-    display: flex;
-    @include laptop {
-      margin-right: rem(0);
-    }
-  }
   &__img {
-    width: 224px;
+    max-width: 224px;
     height: 373px;
     
     & img {
       width: 100%;
       height: 100%;
-      max-width: 224px;
-      max-height: 373px;
       object-fit: cover;
     }
   }
@@ -99,6 +101,7 @@
     display: block;
     left: 38%;
     top: rem(-25);
+    transition: .5s ease;
     
     @include triangle(rem(25), right, #fff);
     opacity: 0;
