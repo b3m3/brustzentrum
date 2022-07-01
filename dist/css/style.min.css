@@ -87,13 +87,6 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
-  font-family: "DIN Alternate Bold";
-  font-display: swap;
-  src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
   font-family: "Assistant";
   font-display: swap;
   src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
@@ -104,6 +97,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Assistant";
   font-display: swap;
   src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Alternate Bold";
+  font-display: swap;
+  src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -1303,11 +1303,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.9375rem;
-  padding-top: 81px;
+  padding-top: 90px;
 }
 @media (max-width: 1440px) {
   .footer__info {
-    padding-top: calc(0px + 81 * ((100vw - 320px) / 1120));
+    padding-top: calc(0px + 90 * ((100vw - 320px) / 1120));
   }
 }
 
@@ -1349,12 +1349,19 @@ body {
 .contacts-footer__row {
   display: flex;
   flex-direction: column;
+  gap: 0.3125rem;
 }
 .contacts-footer__row:nth-child(1) {
   padding-bottom: 0.625rem;
 }
 .contacts-footer__subtitle {
   font-weight: 700;
+  line-height: 26px;
+}
+@media (max-width: 1440px) {
+  .contacts-footer__subtitle {
+    line-height: calc(20px + 6 * ((100vw - 320px) / 1120));
+  }
 }
 .contacts-footer__subtitle_big {
   font-size: 24px;
@@ -1380,7 +1387,7 @@ body {
 }
 .contacts-footer__link {
   font-size: 24px;
-  line-height: 32px;
+  line-height: 31px;
   color: #fff;
 }
 @media (max-width: 1440px) {
@@ -1390,7 +1397,7 @@ body {
 }
 @media (max-width: 1440px) {
   .contacts-footer__link {
-    line-height: calc(28px + 4 * ((100vw - 320px) / 1120));
+    line-height: calc(28px + 3 * ((100vw - 320px) / 1120));
   }
 }
 .contacts-footer__link_mail {
