@@ -56,6 +56,10 @@
     width: rem(250);
     height: rem(103);
 
+    & img {
+      object-fit: contain;
+    }
+
     @include mq(rem(1150)) {
       margin: 0;
     }

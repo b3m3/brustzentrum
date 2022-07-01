@@ -75,15 +75,15 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -296,17 +296,6 @@ body {
     display: none;
   }
 }
-.header__mail {
-  font-weight: 300;
-  font-size: 1.5rem;
-  line-height: 1.9375rem;
-  color: #FFFFFF;
-}
-@media (max-width: 767px) {
-  .header__mail {
-    display: none;
-  }
-}
 .header__btn {
   max-width: 9.5625rem;
 }
@@ -460,16 +449,6 @@ body {
     font-weight: 400;
   }
 }
-.menu__mail {
-  display: none;
-}
-@media (max-width: 767px) {
-  .menu__mail {
-    display: block;
-    font-size: 1.125rem;
-    font-weight: 400;
-  }
-}
 
 /* werwir */
 .werwir {
@@ -557,6 +536,9 @@ body {
   margin: 0 0 0 -4.9375rem;
   width: 15.625rem;
   height: 6.4375rem;
+}
+.info-werwir__logo img {
+  object-fit: contain;
 }
 @media (max-width: 71.875rem) {
   .info-werwir__logo {
@@ -1275,6 +1257,9 @@ body {
 }
 .footer__text {
   line-height: 1.625rem;
+}
+.footer__link {
+  color: #fff;
 }
 
 /* ======== diag-page ======== */
