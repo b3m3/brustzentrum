@@ -1292,22 +1292,22 @@ body {
 .footer__contacts {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 1.875rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .footer__contacts {
-    gap: calc(15px + 15 * ((100vw - 320px) / 1120));
+    gap: 0.9375rem;
   }
 }
 .footer__info {
   display: flex;
   flex-direction: column;
   gap: 0.9375rem;
-  padding-top: 81px;
+  padding-top: 5.0625rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .footer__info {
-    padding-top: calc(0px + 81 * ((100vw - 320px) / 1120));
+    padding-top: 0.9375rem;
   }
 }
 
@@ -1352,7 +1352,7 @@ body {
   gap: 0.1875rem;
 }
 .contacts-footer__row:nth-child(1) {
-  padding-bottom: 0.125rem;
+  padding-bottom: 0.1875rem;
 }
 .contacts-footer__subtitle {
   font-weight: 700;
@@ -1364,6 +1364,7 @@ body {
   }
 }
 .contacts-footer__subtitle_big {
+  padding-bottom: 0.125rem;
   font-size: 24px;
 }
 @media (max-width: 1440px) {
@@ -1423,7 +1424,12 @@ body {
   }
 }
 .info-footer__subtitle span {
-  font-size: 1.75rem;
+  font-size: 28px;
+}
+@media (max-width: 1440px) {
+  .info-footer__subtitle span {
+    font-size: calc(24px + 4 * ((100vw - 320px) / 1120));
+  }
 }
 
 /* ======== diag-page ======== */

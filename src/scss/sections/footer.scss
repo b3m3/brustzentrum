@@ -29,13 +29,22 @@
   &__contacts {
     display: flex;
     flex-direction: column;
-    @include fit('gap', 30, 15, 1);
+    gap: rem(30);
+
+    @include laptop {
+      gap: rem(15);
+    }
+
   }
   &__info {
     display: flex;
     flex-direction: column;
     gap: rem(15);
-    @include fit('padding-top', 81, 0, 1);
+    padding-top: rem(81);
+
+    @include laptop {
+      padding-top: rem(15);
+    }
   }
 }
 
@@ -70,7 +79,7 @@
     gap: rem(3);
     
     &:nth-child(1) {
-      padding-bottom: rem(2);
+      padding-bottom: rem(3);
     }
   }
   &__subtitle {
@@ -78,6 +87,7 @@
     @include fit('line-height', 26, 20, 1);
     
     &_big {
+      padding-bottom: rem(2);
       @include fit('font-size', 24, 22, 1);
     }
   }
@@ -106,7 +116,7 @@
     @include fit('line-height', 32, 28, 1);
 
     & span {
-      font-size: rem(28);
+      @include fit('font-size', 28, 24, 1);
     }
   }
 }
