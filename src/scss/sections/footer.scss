@@ -29,13 +29,13 @@
   &__contacts {
     display: flex;
     flex-direction: column;
-    @include fit('gap', 31, 15, 1);
+    @include fit('gap', 30, 15, 1);
   }
   &__info {
     display: flex;
     flex-direction: column;
     gap: rem(15);
-    @include fit('padding-top', 90, 0, 1);
+    @include fit('padding-top', 81, 0, 1);
   }
 }
 
@@ -67,10 +67,10 @@
   &__row {
     display: flex;
     flex-direction: column;
-    gap: rem(5);
+    gap: rem(3);
     
     &:nth-child(1) {
-      padding-bottom: rem(10);
+      padding-bottom: rem(2);
     }
   }
   &__subtitle {
@@ -104,5 +104,9 @@
     font-weight: 700;
     @include fit('font-size', 20, 18, 1);
     @include fit('line-height', 32, 28, 1);
+
+    & span {
+      font-size: rem(28);
+    }
   }
 }
