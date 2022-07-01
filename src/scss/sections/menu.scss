@@ -24,7 +24,8 @@
       height: 3px;
       left: 0;
       background-color: #fff;
-      transition: .2s;
+      transition: .3s ease;
+      border-radius: 10px;
 
       &:nth-child(1) {
         top: 0;
@@ -32,6 +33,7 @@
       &:nth-child(2) {
         top: 50%;
         transform: translate(0, -50%);
+
       }
       &:nth-child(3) {
         bottom: 0;
@@ -45,7 +47,8 @@
           transform: rotate(45deg);
         }
         &:nth-child(2) {
-          transform: scale(0);
+          transform: translate(0, -50%) scale(0);
+          transition: 1s ease-out;
         }
         &:nth-child(3) {
           bottom: 11px;
@@ -149,6 +152,7 @@
   }
   &__phone {
     display: none;
+    
     @include tablet {
       display: block;
       font-size: rem(18);
@@ -157,6 +161,7 @@
   }
   &__mail {
     display: none;
+
     @include tablet {
       display: block;
       font-size: rem(18);

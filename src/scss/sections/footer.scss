@@ -1,5 +1,7 @@
 .footer {
   &__main {
+    position: relative;
+    z-index: 2;
     @include fit('padding-top', 48, 25, 1);
     @include fit('padding-bottom', 245, 50, 1);
     @include fit('padding-left', 295, 15, 1);

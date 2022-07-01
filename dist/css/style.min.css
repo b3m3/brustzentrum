@@ -75,15 +75,15 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -212,7 +212,7 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .title {
@@ -338,7 +338,8 @@ body {
   height: 3px;
   left: 0;
   background-color: #fff;
-  transition: 0.2s;
+  transition: 0.3s ease;
+  border-radius: 10px;
 }
 .menu .burger span:nth-child(1) {
   top: 0;
@@ -355,7 +356,8 @@ body {
   transform: rotate(45deg);
 }
 .menu .burger.active span:nth-child(2) {
-  transform: scale(0);
+  transform: translate(0, -50%) scale(0);
+  transition: 1s ease-out;
 }
 .menu .burger.active span:nth-child(3) {
   bottom: 11px;
@@ -645,7 +647,6 @@ body {
 }
 .diagnostik__img img {
   border-radius: 2.5rem;
-  object-fit: cover;
 }
 @media (max-width: 1024px) {
   .diagnostik__img img {
@@ -820,7 +821,6 @@ body {
 }
 .images-team__img img {
   border-radius: 1.25rem;
-  object-fit: cover;
 }
 @media (max-width: 1024px) {
   .images-team__img {
@@ -1248,6 +1248,8 @@ body {
 
 /* footer */
 .footer__main {
+  position: relative;
+  z-index: 2;
   padding-top: 48px;
   padding-bottom: 245px;
   padding-left: 295px;
@@ -1356,17 +1358,17 @@ body {
 }
 @media (max-width: 1440px) {
   .top-diagnostik-page__logo {
-    margin-top: calc(90px + -25 * ((100vw - 320px) / 1120));
+    margin-top: calc(120px + -55 * ((100vw - 320px) / 1120));
   }
+}
+.top-diagnostik-page__logo img {
+  object-fit: contain;
 }
 .top-diagnostik-page__bg {
   width: 100%;
   max-width: 65.3125rem;
   min-height: 43.8125rem;
   margin: 0 -2.9375rem 0 0;
-}
-.top-diagnostik-page__bg img {
-  object-fit: cover;
 }
 
 .body-diagnostik-page__row:nth-child(1) {
@@ -1408,9 +1410,6 @@ body {
 .body-diagnostik-page__img {
   border-radius: 1.25rem;
   overflow: hidden;
-}
-.body-diagnostik-page__img img {
-  object-fit: cover;
 }
 @media (max-width: 425px) {
   .body-diagnostik-page__img img {

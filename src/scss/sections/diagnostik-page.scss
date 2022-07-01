@@ -36,20 +36,20 @@
 .top-diagnostik-page {
   &__logo {
     @include fit('margin-left', 76, 15, 1);
-    @include fit('margin-top', 65, 90, 1);
+    @include fit('margin-top', 65, 120, 1);
     width: 100%;
     max-width: rem(174);
     min-height: rem(69);
+
+    & img {
+      object-fit: contain;
+    }
   }
   &__bg {
     width: 100%;
     max-width: rem(1045);
     min-height: rem(701);
     margin: 0 rem(-47) 0 0;
-
-    & img {
-      object-fit: cover;
-    }
   }
 }
 .body-diagnostik-page {
@@ -80,11 +80,7 @@
     overflow: hidden;
 
     & img {
-      object-fit: cover;
-
-      @include mobile-l {
-        object-position: 0% 0%;
-      }
+      @include mobile-l {object-position: 0% 0%;}
     }
   }
   &__btn {

@@ -70,10 +70,7 @@
       border-radius: 0 0 rem(20) rem(20);
     }
 
-    & img {
-      border-radius: rem(20);
-      object-fit: cover;
-    }
+    & img {border-radius: rem(20);}
 
     @include laptop {
       max-width: rem(246);

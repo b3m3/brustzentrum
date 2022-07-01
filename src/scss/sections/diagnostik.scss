@@ -17,10 +17,8 @@
     
     & img {
       border-radius: rem(40);
-      object-fit: cover;
-      @include laptop {
-        object-position: 30% 10%;
-      }
+
+      @include laptop {object-position: 30% 10%;}
     }
 
     @include laptop {margin: 0;}
