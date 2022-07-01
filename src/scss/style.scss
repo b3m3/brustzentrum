@@ -2,6 +2,7 @@
 @import 'lib/mixins';
 @import 'fonts';
 @import 'icon-fonts';
+@import '../../node_modules/swiper/swiper.scss';
 
 /* settings */
 @import 'settings';
@@ -36,6 +37,9 @@
 
 /* diagnostik-page */
 @import './sections/diagnostik-page';
+
+/* team-page */
+@import './sections/team-page';
 
 
 
