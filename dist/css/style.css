@@ -1743,9 +1743,6 @@ body {
 .team-page {
   overflow: hidden;
 }
-.team-page__main {
-  border: 1px solid #000;
-}
 .team-page__logo {
   margin-top: 65px;
   margin-left: 76px;
@@ -1894,6 +1891,7 @@ body {
 }
 
 .drs-team-page__img {
+  cursor: pointer;
   max-width: 224px;
   height: 373px;
 }

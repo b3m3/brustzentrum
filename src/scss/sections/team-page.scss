@@ -1,8 +1,5 @@
 .team-page {
   overflow: hidden;
-  &__main {
-    border: 1px solid #000;
-  }
   &__logo {
     @include fit('margin-top', 65, 120, 1);
     @include fit('margin-left', 76, 15, 1);
@@ -84,6 +81,7 @@
 
 .drs-team-page {
   &__img {
+    cursor: pointer;
     max-width: 224px;
     height: 373px;
     
