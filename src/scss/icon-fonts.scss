@@ -2,6 +2,14 @@
 
 /* ICON CLASS */
 
+.icon-i:before {
+  content: "\e906";
+  color: #fff;
+}
+.icon-location:before {
+  content: "\e905";
+  color: #cf6071;
+}
 .icon-phone:before {
   content: "\e904";
   color: #fff;

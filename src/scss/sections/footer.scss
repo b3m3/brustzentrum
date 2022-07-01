@@ -1,20 +1,106 @@
 .footer {
+  overflow: hidden;
   &__main {
     position: relative;
     z-index: 2;
-    @include fit('padding-top', 48, 25, 1);
-    @include fit('padding-bottom', 245, 50, 1);
-    @include fit('padding-left', 295, 15, 1);
     padding-right: rem(15);
+    @include fit('padding-top', 21, 25, 1);
+    @include fit('padding-bottom', 101, 50, 1);
 
+    display: grid;
+    grid-template: minmax(rem(401), auto) / minmax(auto, rem(509)) minmax(auto, rem(289)) minmax(auto, rem(434));
+    @include fit('gap', 68, 15, 1);
+
+    @include laptop {
+      padding-left: rem(15);
+      grid-template: minmax(rem(401), auto) auto auto / 1fr;
+    }
+  }
+  &__map {
+    @include fit('margin-left', -39, 15, 1);
+
+    @include laptop {
+      max-width: rem(548);
+      width: 100%;
+      margin-left: unset;
+      margin: 0 auto;
+    }
+  }
+  &__contacts {
     display: flex;
     flex-direction: column;
-    gap: rem(20);
+    @include fit('gap', 31, 15, 1);
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(15);
+    @include fit('padding-top', 81, 0, 1);
+  }
+}
+
+.map-footer {
+  &__image {
+    height: 100%;
+    border-radius: rem(40);
+    overflow: hidden;
+  }
+  &__location {
+    position: absolute;
+    width: rem(49);
+    height: rem(49);
+    @include fit('right', 165, -250, 1);
+    top: rem(123);
+    font-size: rem(46);
+
+    @include laptop {
+      right: rem(167);
+    }
+    @include mq(rem(583)) {
+      right: unset;
+      @include fit('left', 760, 203, 1);
+    }
+  }
+}
+
+.contacts-footer {
+  &__row {
+    display: flex;
+    flex-direction: column;
+    
+    &:nth-child(1) {
+      padding-bottom: rem(10);
+    }
+  }
+  &__subtitle {
+    font-weight: 700;
+    
+    &_big {
+      @include fit('font-size', 24, 22, 1);
+    }
   }
   &__text {
-    line-height: rem(26);
+    @include fit('font-size', 24, 18, 1);
+    @include fit('line-height', 32, 28, 1);
   }
   &__link {
+    @include fit('font-size', 24, 18, 1);
+    @include fit('line-height', 32, 28, 1);
     color: #fff;
+
+    &_mail {
+      text-decoration: underline;
+    }
+  }
+}
+
+.info-footer {
+  &__subtitle {
+    display: flex;
+    align-items: center;
+    gap: rem(10);
+    font-weight: 700;
+    @include fit('font-size', 20, 18, 1);
+    @include fit('line-height', 32, 28, 1);
   }
 }
