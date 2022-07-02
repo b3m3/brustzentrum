@@ -31,9 +31,10 @@
   }
   &__drs {
     max-width: rem(1038);
-    @include fit('padding-top', 5, 0, 1);
-    @include fit('padding-bottom', 20, 0, 1);
-    @include fit('margin-right', -21, 15, 1);
+    @include fit('margin-top', 15, 0, 1);
+    @include fit('margin-bottom', 20, 0, 1);
+    margin-right: rem(-21);
+    padding-right: rem(21);
 
     @include laptop {
       margin-right: rem(0);
@@ -54,6 +55,7 @@
     
     height: 0;
     opacity: 0;
+    pointer-events: none;
 
     &.show-info {
       height: unset;
@@ -63,6 +65,7 @@
       @include fit('padding-bottom', 110, 15, 1);
       margin-top: rem(-210);
       opacity: 1;
+      pointer-events: all;
 
       .hover-team-page__pointer {
         opacity: 1;
@@ -109,6 +112,9 @@
     flex-direction: column;
     @include fit('gap', 30, 15, 1);
   }
+  &__text {
+    padding: rem(20) 0;
+  }
   &__subtitle {
     font-weight: 700;
     @include fit('font-size', 20, 18, 1);
@@ -117,6 +123,7 @@
     &_big {
       @include fit('font-size', 24, 20, 1);
       @include fit('line-height', 32, 28, 1);
+      max-width: rem(425);
     }
   }
 }
