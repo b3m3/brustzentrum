@@ -19,8 +19,7 @@
     align-items: end;
     justify-content: end;
     @include fit('gap', 67, 20, 1);
-    @include fit('padding-top', 202, 50, 1);
-    @include fit('padding-bottom', 448, 50, 1);
+    @include fit('padding-bottom', 380, 50, 1);
     @include fit('padding-right', 77, 10, 1);
     padding-left: rem(15);
     grid-template: minmax(rem(370), auto) / minmax(auto, rem(485)) minmax(auto, rem(426));

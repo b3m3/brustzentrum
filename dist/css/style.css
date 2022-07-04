@@ -893,8 +893,7 @@ body {
   align-items: end;
   justify-content: end;
   gap: 67px;
-  padding-top: 202px;
-  padding-bottom: 448px;
+  padding-bottom: 380px;
   padding-right: 77px;
   padding-left: 0.9375rem;
   grid-template: minmax(23.125rem, auto)/minmax(auto, 30.3125rem) minmax(auto, 26.625rem);
@@ -906,12 +905,7 @@ body {
 }
 @media (max-width: 1440px) {
   .team__main {
-    padding-top: calc(50px + 152 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .team__main {
-    padding-bottom: calc(50px + 398 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(50px + 330 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
@@ -1967,13 +1961,13 @@ body {
   opacity: 0;
 }
 .drs-team-page__p.show-pointer {
-  bottom: 10px;
+  bottom: 8px;
   opacity: 1;
   transition: 0.7s ease;
 }
 @media (max-width: 1440px) {
   .drs-team-page__p.show-pointer {
-    bottom: calc(40px + -30 * ((100vw - 320px) / 1120));
+    bottom: calc(40px + -32 * ((100vw - 320px) / 1120));
   }
 }
 
