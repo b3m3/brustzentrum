@@ -1,8 +1,5 @@
 .team-page {
   overflow: hidden;
-  &__main {
-
-  }
   &__logo {
     @include fit('margin-top', 65, 120, 1);
     @include fit('margin-left', 76, 15, 1);
