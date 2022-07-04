@@ -5,7 +5,7 @@ const teamInfo = () => {
 
   if (section) {
     
-    items.forEach(item => {
+    items.forEach((item, i) => {
       item.addEventListener('mousemove', (e) => {
         info.classList.add('show-info');
       });

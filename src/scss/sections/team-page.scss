@@ -100,7 +100,7 @@
   &__pointer {
     position: absolute;
     display: block;
-    left: 38%;
+    left: rem(394);
     top: rem(-25);
     transition: .5s ease;
     
