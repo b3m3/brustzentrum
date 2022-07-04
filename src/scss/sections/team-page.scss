@@ -1,5 +1,8 @@
 .team-page {
   overflow: hidden;
+  &__main {
+
+  }
   &__logo {
     @include fit('margin-top', 65, 120, 1);
     @include fit('margin-left', 76, 15, 1);
@@ -26,7 +29,7 @@
   &__row{
     max-width: rem(874);
     &_min {
-      max-width: rem(822)
+      max-width: rem(822);
     }
   }
   &__drs {
@@ -40,13 +43,11 @@
       margin-right: rem(0);
     }
   }
-  &__box {
-    position: relative;
-    overflow: visible;
-  }
   &__hover {
     position: relative;
     z-index: 2;
+    top: 0;
+    height: 200%;
     color: #000;
     background-color: #fff;
     box-shadow: 0px 4px 20px rgba(189, 91, 106, 0.2);
@@ -66,18 +67,34 @@
     opacity: 0;
     pointer-events: none;
 
+    @include laptop {
+      padding-right: rem(15);
+    }
+
     &.show-info {
       height: unset;
       opacity: 1;
       pointer-events: all;
-      margin-top: rem(-210);
+      top: -210px;
 
-      @include tablet {
-        @include fit('margin-top', -30, -290, 1);
+      @include mq(rem(660)) {
+        top: -240px;
       }
 
-      @include mq(rem(350)) {
-        @include fit('margin-top', -30, -325, 1);
+      @include mq(rem(528)) {
+        top: -268px;
+      }
+
+      @include mq(rem(417)) {
+        top: -295px;
+      }
+
+      @include mq(rem(345)) {
+        top: -323px;
+      }
+
+      @include mq(rem(340)) {
+        top: -350px;
       }
     }
   }
@@ -96,6 +113,7 @@
     }
   }
   &__p {
+    pointer-events: none;
     display: block;
     position: absolute;
     right: 0;
@@ -103,18 +121,8 @@
     @include triangle(rem(25), right, #fff);
     opacity: 0;
 
-    opacity: 1;
-    bottom: 10px;
-
-    @include mq(rem(1380)) {
-      @include fit('bottom', 10, 40, 1);
-    }
-    @include tablet {
-      @include fit('bottom', -20, 20, 1);
-    }
-    
     &.show-pointer {
-      bottom: rem(10);
+      @include fit('bottom', 10, 40, 1);
       opacity: 1;
       transition: .7s ease;
     }

@@ -1820,13 +1820,11 @@ body {
     margin-right: 0rem;
   }
 }
-.team-page__box {
-  position: relative;
-  overflow: visible;
-}
 .team-page__hover {
   position: relative;
   z-index: 2;
+  top: 0;
+  height: 200%;
   color: #000;
   background-color: #fff;
   box-shadow: 0px 4px 20px rgba(189, 91, 106, 0.2);
@@ -1863,30 +1861,40 @@ body {
     padding-bottom: calc(15px + 95 * ((100vw - 320px) / 1120));
   }
 }
+@media (max-width: 1024px) {
+  .team-page__hover {
+    padding-right: 0.9375rem;
+  }
+}
 .team-page__hover.show-info {
   height: unset;
   opacity: 1;
   pointer-events: all;
-  margin-top: -13.125rem;
+  top: -210px;
 }
-@media (max-width: 767px) {
+@media (max-width: 41.25rem) {
   .team-page__hover.show-info {
-    margin-top: -30px;
+    top: -240px;
   }
 }
-@media (max-width: 767px) and (max-width: 1440px) {
+@media (max-width: 33rem) {
   .team-page__hover.show-info {
-    margin-top: calc(-290px + 260 * ((100vw - 320px) / 1120));
+    top: -268px;
   }
 }
-@media (max-width: 21.875rem) {
+@media (max-width: 26.0625rem) {
   .team-page__hover.show-info {
-    margin-top: -30px;
+    top: -295px;
   }
 }
-@media (max-width: 21.875rem) and (max-width: 1440px) {
+@media (max-width: 21.5625rem) {
   .team-page__hover.show-info {
-    margin-top: calc(-325px + 295 * ((100vw - 320px) / 1120));
+    top: -323px;
+  }
+}
+@media (max-width: 21.25rem) {
+  .team-page__hover.show-info {
+    top: -350px;
   }
 }
 
@@ -1901,6 +1909,7 @@ body {
   object-fit: cover;
 }
 .drs-team-page__p {
+  pointer-events: none;
   display: block;
   position: absolute;
   right: 0;
@@ -1911,33 +1920,16 @@ body {
   border-bottom: 1.5625rem solid transparent;
   border-left: 1.5625rem solid #fff;
   opacity: 0;
-  opacity: 1;
-  bottom: 10px;
-}
-@media (max-width: 86.25rem) {
-  .drs-team-page__p {
-    bottom: 10px;
-  }
-}
-@media (max-width: 86.25rem) and (max-width: 1440px) {
-  .drs-team-page__p {
-    bottom: calc(40px + -30 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 767px) {
-  .drs-team-page__p {
-    bottom: -20px;
-  }
-}
-@media (max-width: 767px) and (max-width: 1440px) {
-  .drs-team-page__p {
-    bottom: calc(20px + -40 * ((100vw - 320px) / 1120));
-  }
 }
 .drs-team-page__p.show-pointer {
-  bottom: 0.625rem;
+  bottom: 10px;
   opacity: 1;
   transition: 0.7s ease;
+}
+@media (max-width: 1440px) {
+  .drs-team-page__p.show-pointer {
+    bottom: calc(40px + -30 * ((100vw - 320px) / 1120));
+  }
 }
 
 .hover-team-page__box {
