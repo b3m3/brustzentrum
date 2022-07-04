@@ -1,6 +1,12 @@
 .team {
   &__wrapp {
     position: relative;
+
+    min-height: rem(1018);
+
+    @include mq(rem(550)) {
+      min-height: rem(600);
+    }
   }
   &__bg {
     position: absolute;

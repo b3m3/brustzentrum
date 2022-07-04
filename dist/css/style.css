@@ -75,13 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Assistant";
-  font-display: swap;
   src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
   font-weight: 700;
   font-style: normal;
@@ -101,9 +94,9 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
-  font-family: "DIN Alternate Bold";
+  font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
+  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -111,6 +104,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "icomoon";
   font-display: swap;
   src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "DIN Alternate Bold";
+  font-display: swap;
+  src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -770,14 +770,14 @@ body {
   overflow: hidden;
 }
 .diagnostik__main {
-  padding-bottom: 102px;
+  padding-bottom: 252px;
   display: grid;
   gap: 33px;
   grid-template: minmax(39.625rem, auto)/minmax(auto, 38.4375rem) minmax(auto, 64.25rem);
 }
 @media (max-width: 1440px) {
   .diagnostik__main {
-    padding-bottom: calc(50px + 52 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(50px + 202 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
@@ -875,6 +875,12 @@ body {
 /* team */
 .team__wrapp {
   position: relative;
+  min-height: 63.625rem;
+}
+@media (max-width: 34.375rem) {
+  .team__wrapp {
+    min-height: 37.5rem;
+  }
 }
 .team__bg {
   position: absolute;
@@ -1049,7 +1055,7 @@ body {
 
 /* verfugen */
 .verfugen {
-  margin-top: -11.625rem;
+  margin-top: -20.9375rem;
   padding-top: 4.5rem;
   padding-bottom: 150px;
   overflow: hidden;
@@ -1061,8 +1067,12 @@ body {
 }
 @media (max-width: 1024px) {
   .verfugen {
-    margin-top: 0;
     padding-top: 3.125rem;
+  }
+}
+@media (max-width: 34.375rem) {
+  .verfugen {
+    margin-top: 0;
   }
 }
 .verfugen__wrapp {

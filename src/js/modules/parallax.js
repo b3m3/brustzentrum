@@ -11,8 +11,8 @@ const parallax = () => {
     background.style.transform = `translateY(-${distance()}px)` :
     null;
 
-  const checkSize = () => {
-    if (document.documentElement.clientWidth > 1024) {
+  const checkSize = width => {
+    if (document.documentElement.clientWidth > width) {
       window.addEventListener('scroll', scroll);
     } else {
       window.removeEventListener('scroll', scroll);
@@ -21,8 +21,8 @@ const parallax = () => {
   };
 
   if (document.querySelector('.team')) {
-    checkSize();
-    window.addEventListener('resize', checkSize);
+    checkSize(550);
+    window.addEventListener('resize', () => checkSize(550));
   }
 };
 

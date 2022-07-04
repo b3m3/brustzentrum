@@ -1,7 +1,7 @@
 .diagnostik {
   overflow: hidden;
   &__main {
-    @include fit('padding-bottom', 102, 50, 1);
+    @include fit('padding-bottom', 252, 50, 1);
     display: grid;
     @include fit('gap', 33, 15, 1);
     grid-template: minmax(rem(634), auto) / minmax(auto, rem(615)) minmax(auto, rem(1028));

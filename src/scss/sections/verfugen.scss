@@ -1,12 +1,15 @@
 .verfugen {
-  margin-top: rem(-186);
+  margin-top: rem(-335);
   padding-top: rem(72);
   @include fit('padding-bottom', 150, 25, 1);
   overflow: hidden;
 
   @include laptop {
-    margin-top: 0;
     padding-top: rem(50);
+  }
+
+  @include mq(rem(550)) {
+    margin-top: 0;
   }
   &__wrapp {
     position: relative;
