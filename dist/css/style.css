@@ -1820,14 +1820,22 @@ body {
     margin-right: 0rem;
   }
 }
+.team-page__box {
+  position: relative;
+  overflow: visible;
+}
 .team-page__hover {
   position: relative;
   z-index: 2;
   color: #000;
   background-color: #fff;
   box-shadow: 0px 4px 20px rgba(189, 91, 106, 0.2);
-  border-radius: 2.5rem;
+  border-radius: 2.5rem 0 0 0;
   transition: 0.5s ease;
+  padding-top: 56px;
+  padding-left: 51px;
+  padding-right: 146px;
+  padding-bottom: 110px;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -1835,38 +1843,31 @@ body {
   opacity: 0;
   pointer-events: none;
 }
-.team-page__hover.show-info {
-  height: unset;
-  padding-top: 56px;
-  padding-left: 51px;
-  padding-right: 146px;
-  padding-bottom: 110px;
-  margin-top: -13.125rem;
-  opacity: 1;
-  pointer-events: all;
-}
 @media (max-width: 1440px) {
-  .team-page__hover.show-info {
+  .team-page__hover {
     padding-top: calc(15px + 41 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
-  .team-page__hover.show-info {
+  .team-page__hover {
     padding-left: calc(15px + 36 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
-  .team-page__hover.show-info {
+  .team-page__hover {
     padding-right: calc(15px + 131 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
-  .team-page__hover.show-info {
+  .team-page__hover {
     padding-bottom: calc(15px + 95 * ((100vw - 320px) / 1120));
   }
 }
-.team-page__hover.show-info .hover-team-page__pointer {
+.team-page__hover.show-info {
+  height: unset;
   opacity: 1;
+  pointer-events: all;
+  margin-top: -13.125rem;
 }
 @media (max-width: 767px) {
   .team-page__hover.show-info {
@@ -1899,20 +1900,46 @@ body {
   height: 100%;
   object-fit: cover;
 }
-
-.hover-team-page__pointer {
-  position: absolute;
+.drs-team-page__p {
   display: block;
-  left: 24.625rem;
-  top: -1.5625rem;
-  transition: 0.5s ease;
+  position: absolute;
+  right: 0;
+  bottom: -4.375rem;
   width: 0;
   height: 0;
   border-top: 1.5625rem solid transparent;
   border-bottom: 1.5625rem solid transparent;
   border-left: 1.5625rem solid #fff;
   opacity: 0;
+  opacity: 1;
+  bottom: 10px;
 }
+@media (max-width: 86.25rem) {
+  .drs-team-page__p {
+    bottom: 10px;
+  }
+}
+@media (max-width: 86.25rem) and (max-width: 1440px) {
+  .drs-team-page__p {
+    bottom: calc(40px + -30 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 767px) {
+  .drs-team-page__p {
+    bottom: -20px;
+  }
+}
+@media (max-width: 767px) and (max-width: 1440px) {
+  .drs-team-page__p {
+    bottom: calc(20px + -40 * ((100vw - 320px) / 1120));
+  }
+}
+.drs-team-page__p.show-pointer {
+  bottom: 0.625rem;
+  opacity: 1;
+  transition: 0.7s ease;
+}
+
 .hover-team-page__box {
   display: flex;
   flex-direction: column;

@@ -40,15 +40,24 @@
       margin-right: rem(0);
     }
   }
+  &__box {
+    position: relative;
+    overflow: visible;
+  }
   &__hover {
     position: relative;
     z-index: 2;
     color: #000;
     background-color: #fff;
     box-shadow: 0px 4px 20px rgba(189, 91, 106, 0.2);
-    border-radius: rem(40);
+    border-radius: rem(40) 0 0 0;
     transition: .5s ease;
     
+    @include fit('padding-top', 56, 15, 1);
+    @include fit('padding-left', 51, 15, 1);
+    @include fit('padding-right', 146, 15, 1);
+    @include fit('padding-bottom', 110, 15, 1);
+
     display: flex;
     flex-direction: column;
     gap: rem(20);
@@ -59,17 +68,9 @@
 
     &.show-info {
       height: unset;
-      @include fit('padding-top', 56, 15, 1);
-      @include fit('padding-left', 51, 15, 1);
-      @include fit('padding-right', 146, 15, 1);
-      @include fit('padding-bottom', 110, 15, 1);
-      margin-top: rem(-210);
       opacity: 1;
       pointer-events: all;
-
-      .hover-team-page__pointer {
-        opacity: 1;
-      }
+      margin-top: rem(-210);
 
       @include tablet {
         @include fit('margin-top', -30, -290, 1);
@@ -94,19 +95,33 @@
       object-fit: cover;
     }
   }
+  &__p {
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: rem(-70);
+    @include triangle(rem(25), right, #fff);
+    opacity: 0;
+
+    opacity: 1;
+    bottom: 10px;
+
+    @include mq(rem(1380)) {
+      @include fit('bottom', 10, 40, 1);
+    }
+    @include tablet {
+      @include fit('bottom', -20, 20, 1);
+    }
+    
+    &.show-pointer {
+      bottom: rem(10);
+      opacity: 1;
+      transition: .7s ease;
+    }
+  }
 }
 
 .hover-team-page {
-  &__pointer {
-    position: absolute;
-    display: block;
-    left: rem(394);
-    top: rem(-25);
-    transition: .5s ease;
-    
-    @include triangle(rem(25), right, #fff);
-    opacity: 0;
-  }
   &__box {
     display: flex;
     flex-direction: column;
