@@ -2,7 +2,7 @@ const menuEvents = () => {
   const sections = document.querySelectorAll('.sec');
   const scale = document.querySelector('.menu__scale span');
   const links = document.querySelectorAll('.menu__link');
-  const lvl = [12, 62, 110, 157, 205, 255];
+  const lvl = [12, 62, 110, 157, 205];
 
   const scrollMenu = () => {
     if(sections.length > 0) {

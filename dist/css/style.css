@@ -82,15 +82,15 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
-  font-weight: 400;
+  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -101,17 +101,17 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
-  font-family: "Assistant";
-  font-display: swap;
-  src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
-  font-weight: 600;
-  font-style: normal;
-}
-@font-face {
   font-family: "icomoon";
   font-display: swap;
   src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("ttf");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Assistant";
+  font-display: swap;
+  src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -624,16 +624,10 @@ body {
 }
 .vision__main {
   padding-top: 4rem;
-  padding-bottom: 90px;
   margin-right: 5.875rem;
   display: grid;
   justify-content: end;
   grid-template: auto/minmax(auto, 31.25rem) minmax(auto, 32.6875rem);
-}
-@media (max-width: 1440px) {
-  .vision__main {
-    padding-bottom: calc(50px + 40 * ((100vw - 320px) / 1120));
-  }
 }
 @media (max-width: 1024px) {
   .vision__main {
@@ -816,195 +810,6 @@ body {
   }
 }
 
-/* brustdiagnostik */
-.brustdiagnostik {
-  overflow: hidden;
-}
-.brustdiagnostik__main {
-  margin-bottom: 88px;
-  padding-left: 410px;
-  padding-right: 40px;
-}
-@media (max-width: 1440px) {
-  .brustdiagnostik__main {
-    margin-bottom: calc(50px + 38 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .brustdiagnostik__main {
-    padding-left: calc(-410px + 820 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .brustdiagnostik__main {
-    padding-right: calc(15px + 25 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .brustdiagnostik__main {
-    padding: 0 0.9375rem;
-  }
-}
-.brustdiagnostik__top {
-  display: flex;
-  flex-direction: column;
-  max-width: 44.875rem;
-  gap: 36px;
-  margin-bottom: 87px;
-}
-@media (max-width: 1440px) {
-  .brustdiagnostik__top {
-    gap: calc(20px + 16 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .brustdiagnostik__top {
-    margin-bottom: calc(80px + 7 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .brustdiagnostik__top {
-    max-width: unset;
-  }
-}
-.brustdiagnostik__body {
-  display: grid;
-  grid-template: minmax(25.625rem, auto)/minmax(auto, 20.5625rem) minmax(auto, 52.625rem);
-}
-@media (max-width: 1024px) {
-  .brustdiagnostik__body {
-    grid-template: auto auto/1fr;
-  }
-}
-
-.body-brustdiagnostik__icons {
-  position: relative;
-  z-index: 3;
-  max-height: 19.6875rem;
-  margin: 3.5625rem 0 0 0;
-}
-.body-brustdiagnostik__icons::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background: url("../img/brustdiagnostik/bg.png") no-repeat;
-  background-size: contain;
-}
-.body-brustdiagnostik__icons::after {
-  position: absolute;
-  z-index: 2;
-  content: "";
-  left: -1.1875rem;
-  top: -5.6875rem;
-  width: 440.83px;
-  height: 406.91px;
-  background: #920016;
-  mix-blend-mode: multiply;
-  opacity: 0.1;
-  filter: blur(100px);
-  transform: rotate(43.55deg);
-}
-@media (max-width: 1024px) {
-  .body-brustdiagnostik__icons {
-    max-height: unset;
-    max-width: 20.5625rem;
-    min-height: 19.6875rem;
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-.body-brustdiagnostik__icon {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-.body-brustdiagnostik__icon:nth-child(1) {
-  top: -1.875rem;
-  left: -0.75rem;
-  max-width: 9rem;
-  max-height: 8.75rem;
-}
-@media (max-width: 767px) {
-  .body-brustdiagnostik__icon:nth-child(1) {
-    max-width: 6.25rem;
-    max-height: 6rem;
-  }
-}
-.body-brustdiagnostik__icon:nth-child(2) {
-  top: -2.6875rem;
-  right: -1.75rem;
-  max-width: 9.25rem;
-  max-height: 12.5625rem;
-}
-@media (max-width: 767px) {
-  .body-brustdiagnostik__icon:nth-child(2) {
-    top: -1.4375rem;
-    right: 0;
-    max-width: 6.25rem;
-    max-height: 9.5625rem;
-  }
-}
-.body-brustdiagnostik__icon:nth-child(3) {
-  left: 0;
-  bottom: 1.625rem;
-  max-width: 4.3125rem;
-  max-height: 8.9375rem;
-}
-@media (max-width: 767px) {
-  .body-brustdiagnostik__icon:nth-child(3) {
-    max-width: 3.6875rem;
-    max-height: 8.3125rem;
-  }
-}
-.body-brustdiagnostik__icon:nth-child(4) {
-  right: 3.75rem;
-  bottom: 0.6875rem;
-  max-width: 8.1875rem;
-  max-height: 7.875rem;
-}
-@media (max-width: 767px) {
-  .body-brustdiagnostik__icon:nth-child(4) {
-    bottom: 1.9375rem;
-    max-width: 6.25rem;
-    max-height: 5.9375rem;
-  }
-}
-.body-brustdiagnostik__info {
-  position: relative;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 2.5rem;
-  padding-left: 288px;
-  padding-top: 84px;
-  padding-right: 62px;
-  padding-bottom: 0.9375rem;
-  margin-left: -11.3125rem;
-}
-@media (max-width: 1440px) {
-  .body-brustdiagnostik__info {
-    padding-left: calc(200px + 88 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-brustdiagnostik__info {
-    padding-top: calc(15px + 69 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-brustdiagnostik__info {
-    padding-right: calc(15px + 47 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .body-brustdiagnostik__info {
-    margin: -180px 0 0 0;
-    padding: 12.5rem 0.9375rem 0.9375rem 0.9375rem;
-  }
-}
-
 /* brustchirurgie */
 .brustchirurgie {
   overflow: hidden;
@@ -1023,7 +828,7 @@ body {
   height: 100%;
   left: 0;
   top: 0;
-  background: url("../../img/brustchirurgie/01.png") no-repeat;
+  background: url("../img/brustchirurgie/01.png") no-repeat;
   background-size: cover;
 }
 .brustchirurgie::after {
@@ -1306,398 +1111,6 @@ body {
 .info-team__btn span::before {
   color: #fff;
   font-size: 0.9375rem;
-}
-
-/* verfugen */
-.verfugen {
-  margin-top: -20.9375rem;
-  padding-top: 4.5rem;
-  padding-bottom: 150px;
-  overflow: hidden;
-}
-@media (max-width: 1440px) {
-  .verfugen {
-    padding-bottom: calc(25px + 125 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .verfugen {
-    padding-top: 3.125rem;
-  }
-}
-@media (max-width: 34.375rem) {
-  .verfugen {
-    margin-top: 0;
-  }
-}
-.verfugen__wrapp {
-  position: relative;
-  z-index: 2;
-}
-.verfugen__main {
-  background: #F5F5F5;
-  border: 1px solid #fff;
-  box-shadow: 0px 4px 40px rgba(146, 0, 22, 0.1);
-  border-radius: 2.5rem;
-  color: #000;
-  margin-right: -163px;
-  margin-left: 293px;
-  padding-top: 70px;
-}
-@media (max-width: 1440px) {
-  .verfugen__main {
-    margin-right: calc(0px + -163 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .verfugen__main {
-    margin-left: calc(-530px + 823 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .verfugen__main {
-    padding-top: calc(20px + 50 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .verfugen__main {
-    padding: 50px;
-    margin: 0 0.9375rem;
-  }
-}
-@media (max-width: 1024px) and (max-width: 1440px) {
-  .verfugen__main {
-    padding: calc(15px + 35 * ((100vw - 320px) / 1120));
-  }
-}
-.verfugen__title {
-  padding-left: 276px;
-}
-@media (max-width: 1440px) {
-  .verfugen__title {
-    padding-left: calc(10px + 266 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .verfugen__title {
-    text-align: center;
-    padding-bottom: 1.25rem;
-  }
-}
-@media (max-width: 1024px) {
-  .verfugen__body {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-}
-@media (max-width: 1024px) and (max-width: 1440px) {
-  .verfugen__body {
-    gap: calc(20px + 30 * ((100vw - 320px) / 1120));
-  }
-}
-
-.body-verfugen__item {
-  display: grid;
-}
-.body-verfugen__item:nth-child(1) {
-  gap: 45px;
-  grid-template: minmax(46.75rem, auto)/minmax(auto, 39.6875rem) minmax(auto, 36.3125rem);
-  margin-top: -186px;
-  margin-left: -404px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) {
-    gap: calc(20px + 25 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) {
-    margin-top: calc(0px + -186 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) {
-    margin-left: calc(0px + -404 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(1) .body-verfugen__col {
-  gap: 35px;
-  padding-top: 262px;
-  grid-row: 1/2;
-  grid-column: 2/3;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) .body-verfugen__col {
-    gap: calc(15px + 20 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) .body-verfugen__col {
-    padding-top: calc(0px + 262 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(1) .body-verfugen__img::before {
-  left: 101px;
-  top: 86px;
-  width: 518px;
-  height: 518px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) .body-verfugen__img::before {
-    left: calc(30px + 71 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) .body-verfugen__img::before {
-    top: calc(30px + 56 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) .body-verfugen__img::before {
-    width: calc(250px + 268 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(1) .body-verfugen__img::before {
-    height: calc(250px + 268 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(2) {
-  gap: 51px;
-  grid-template: minmax(33.9375rem, auto)/minmax(auto, 30.3125rem) minmax(auto, 32.75rem);
-  margin-top: -281px;
-  padding-left: 160px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(2) {
-    gap: calc(20px + 31 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(2) {
-    margin-top: calc(0px + -281 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(2) {
-    padding-left: calc(0px + 160 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(2) .body-verfugen__col {
-  gap: 31px;
-  padding-top: 318px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(2) .body-verfugen__col {
-    gap: calc(15px + 16 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(2) .body-verfugen__col {
-    padding-top: calc(0px + 318 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(2) .body-verfugen__img::before {
-  left: -3.1875rem;
-  top: 0;
-  width: 37.0625rem;
-  height: 37.0625rem;
-}
-.body-verfugen__item:nth-child(3) {
-  gap: 147px;
-  grid-template: minmax(28.875rem, auto)/minmax(auto, 26.4375rem) minmax(auto, 31.1875rem);
-  margin-top: 54px;
-  margin-left: -83px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(3) {
-    gap: calc(20px + 127 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(3) {
-    margin-top: calc(0px + 54 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(3) {
-    margin-left: calc(0px + -83 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(3) .body-verfugen__col {
-  gap: 32px;
-  grid-row: 1/2;
-  grid-column: 2/3;
-  padding-top: 129px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(3) .body-verfugen__col {
-    gap: calc(15px + 17 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(3) .body-verfugen__col {
-    padding-top: calc(0px + 129 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(4) {
-  gap: 29px;
-  grid-template: minmax(38.1875rem, auto)/minmax(auto, 30.5625rem) minmax(auto, 35.5625rem);
-  margin-top: -113px;
-  padding-left: 133px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(4) {
-    gap: calc(20px + 9 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(4) {
-    margin-top: calc(0px + -113 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(4) {
-    padding-left: calc(0px + 133 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(4) .body-verfugen__col {
-  gap: 28px;
-  padding-top: 283px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(4) .body-verfugen__col {
-    gap: calc(15px + 13 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(4) .body-verfugen__col {
-    padding-top: calc(0px + 283 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(4) .body-verfugen__img::before {
-  left: 7.5625rem;
-  top: 0.875rem;
-  width: 23.875rem;
-  height: 23.875rem;
-}
-.body-verfugen__item:nth-child(5) {
-  gap: 120px;
-  grid-template: minmax(32.6875rem, auto)/minmax(auto, 32rem) minmax(auto, 33.75rem);
-  margin-bottom: -39px;
-  margin-left: -159px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(5) {
-    gap: calc(20px + 100 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(5) {
-    margin-bottom: calc(0px + -39 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(5) {
-    margin-left: calc(0px + -159 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(5) .body-verfugen__col {
-  gap: 32px;
-  grid-row: 1/2;
-  grid-column: 2/3;
-  padding-top: 88px;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(5) .body-verfugen__col {
-    gap: calc(15px + 17 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__item:nth-child(5) .body-verfugen__col {
-    padding-top: calc(0px + 88 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__item:nth-child(5) .body-verfugen__img::before {
-  left: 4.875rem;
-  top: 6.0625rem;
-  width: 27.125rem;
-  height: 27.125rem;
-}
-@media (max-width: 1024px) {
-  .body-verfugen__item:nth-child(1), .body-verfugen__item:nth-child(2), .body-verfugen__item:nth-child(3), .body-verfugen__item:nth-child(4), .body-verfugen__item:nth-child(5) {
-    grid-template: minmax(25rem, auto) auto/1fr;
-    gap: 0.9375rem;
-    padding: 0;
-    margin: 0;
-  }
-  .body-verfugen__item:nth-child(1) .body-verfugen__col, .body-verfugen__item:nth-child(2) .body-verfugen__col, .body-verfugen__item:nth-child(3) .body-verfugen__col, .body-verfugen__item:nth-child(4) .body-verfugen__col, .body-verfugen__item:nth-child(5) .body-verfugen__col {
-    gap: 1.25rem;
-    padding: 0;
-    margin: 0;
-    grid-row: 2/3;
-    grid-column: 1/2;
-  }
-}
-@media (max-width: 767px) {
-  .body-verfugen__item:nth-child(1), .body-verfugen__item:nth-child(2), .body-verfugen__item:nth-child(3), .body-verfugen__item:nth-child(4), .body-verfugen__item:nth-child(5) {
-    grid-template: minmax(15.625rem, auto) auto/1fr;
-  }
-}
-.body-verfugen__col {
-  display: flex;
-}
-.body-verfugen__number {
-  position: relative;
-  font-weight: 700;
-  font-size: 64px;
-  line-height: 84px;
-  color: #E06477;
-}
-@media (max-width: 1440px) {
-  .body-verfugen__number {
-    font-size: calc(32px + 32 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .body-verfugen__number {
-    line-height: calc(64px + 20 * ((100vw - 320px) / 1120));
-  }
-}
-.body-verfugen__number::before {
-  position: absolute;
-  z-index: 2;
-  content: "";
-  left: -1rem;
-  top: 1.375rem;
-  width: 3.8125rem;
-  height: 4.875rem;
-  background: url("../img/verfugen/decore.svg") no-repeat;
-  background-size: contain;
-}
-.body-verfugen__text {
-  padding-top: 0.625rem;
-}
-.body-verfugen__img img {
-  object-fit: contain;
-}
-.body-verfugen__img::before {
-  position: absolute;
-  content: "";
-  background: #920016;
-  mix-blend-mode: multiply;
-  opacity: 0.1;
-  filter: blur(100px);
-}
-.body-verfugen__btn {
-  margin-top: 1.6875rem;
-  color: #E06477;
-  background: rgba(224, 100, 119, 0.2);
-  max-width: 10.9375rem;
-}
-.body-verfugen__btn:hover {
-  background: rgba(224, 100, 119, 0.3);
 }
 
 /* footer */
