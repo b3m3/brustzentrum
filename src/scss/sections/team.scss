@@ -1,7 +1,6 @@
 .team {
   &__wrapp {
     position: relative;
-
     min-height: rem(1018);
 
     @include mq(rem(550)) {

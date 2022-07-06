@@ -20,10 +20,10 @@ const parallax = () => {
     }
   };
 
-  if (document.querySelector('.team')) {
-    checkSize(550);
-    window.addEventListener('resize', () => checkSize(550));
-  }
+  // if (document.querySelector('.team')) {
+  //   checkSize(550);
+  //   window.addEventListener('resize', () => checkSize(550));
+  // }
 };
 
 export default parallax;

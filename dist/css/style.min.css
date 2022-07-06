@@ -82,13 +82,6 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Assistant";
-  font-display: swap;
   src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
@@ -96,8 +89,8 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
-  font-weight: 600;
+  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
+  font-weight: 400;
   font-style: normal;
 }
 @font-face {
@@ -105,6 +98,13 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
   src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Assistant";
+  font-display: swap;
+  src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
+  font-weight: 600;
   font-style: normal;
 }
 @font-face {
@@ -1003,6 +1003,128 @@ body {
     margin: -180px 0 0 0;
     padding: 12.5rem 0.9375rem 0.9375rem 0.9375rem;
   }
+}
+
+/* brustchirurgie */
+.brustchirurgie {
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 124px;
+}
+@media (max-width: 1440px) {
+  .brustchirurgie {
+    margin-bottom: calc(50px + 74 * ((100vw - 320px) / 1120));
+  }
+}
+.brustchirurgie::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("../../img/brustchirurgie/01.png") no-repeat;
+  background-size: cover;
+}
+.brustchirurgie::after {
+  position: absolute;
+  content: "";
+  width: 68.6111111111%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, #000000 -52.96%, rgba(0, 0, 0, 0) 50%);
+  opacity: 0.5;
+  background-size: cover;
+}
+.brustchirurgie__main {
+  display: flex;
+  justify-content: end;
+  padding-top: 75px;
+  padding-bottom: 39px;
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__main {
+    padding-top: calc(30px + 45 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__main {
+    padding-bottom: calc(30px + 9 * ((100vw - 320px) / 1120));
+  }
+}
+.brustchirurgie__body {
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(4px);
+  border-radius: 2.5rem;
+  margin: 0 -3.625rem 0 3.625rem;
+  padding-left: 64px;
+  padding-top: 31px;
+  padding-bottom: 43px;
+  padding-right: 149px;
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__body {
+    padding-left: calc(15px + 49 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__body {
+    padding-top: calc(15px + 16 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__body {
+    padding-bottom: calc(15px + 28 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__body {
+    padding-right: calc(15px + 134 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 767px) {
+  .brustchirurgie__body {
+    margin: 0;
+    margin-left: 58px;
+    border-radius: 2.5rem 0 0 2.5rem;
+  }
+}
+@media (max-width: 767px) and (max-width: 1440px) {
+  .brustchirurgie__body {
+    margin-left: calc(15px + 43 * ((100vw - 320px) / 1120));
+  }
+}
+.brustchirurgie__row:first-child {
+  padding-bottom: 27px;
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__row:first-child {
+    padding-bottom: calc(20px + 7 * ((100vw - 320px) / 1120));
+  }
+}
+.brustchirurgie__row:last-child {
+  display: flex;
+  gap: 58px;
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__row:last-child {
+    gap: calc(20px + 38 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 767px) {
+  .brustchirurgie__row:last-child {
+    flex-direction: column;
+  }
+}
+.brustchirurgie__col:first-child {
+  max-width: 22.875rem;
+}
+.brustchirurgie__col:last-child {
+  max-width: 30.3125rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* team */
