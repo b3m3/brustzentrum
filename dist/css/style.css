@@ -535,7 +535,7 @@ body {
 .menu__wrapp {
   position: fixed;
   z-index: 10;
-  left: 8.125rem;
+  left: 5.9375rem;
   bottom: 8rem;
 }
 @media (max-width: 86.25rem) {
@@ -710,7 +710,7 @@ body {
   top: -11px;
   width: calc(100% + 40px);
   height: calc(100% + 50px);
-  background: url("../../img/vision/decore.svg") no-repeat;
+  background: url("../img/vision/decore.svg") no-repeat;
   background-size: contain;
 }
 @media (max-width: 1440px) {
@@ -752,109 +752,68 @@ body {
 
 /* diagnostik */
 .diagnostik {
-  overflow: hidden;
-}
-.diagnostik__main {
-  padding-bottom: 252px;
-  display: grid;
-  gap: 33px;
-  grid-template: minmax(39.625rem, auto)/minmax(auto, 38.4375rem) minmax(auto, 64.25rem);
-}
-@media (max-width: 1440px) {
-  .diagnostik__main {
-    padding-bottom: calc(50px + 202 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .diagnostik__main {
-    gap: calc(15px + 18 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1024px) {
-  .diagnostik__main {
-    padding-left: 0.9375rem;
-    padding-right: 0.9375rem;
-    grid-template: minmax(25rem, auto) minmax(18.75rem, auto)/1fr;
-  }
-}
-.diagnostik__img {
-  margin: 0 12.625rem 0 -12.625rem;
-}
-.diagnostik__img img {
-  border-radius: 2.5rem;
-}
-@media (max-width: 1024px) {
-  .diagnostik__img img {
-    object-position: 30% 10%;
-  }
-}
-@media (max-width: 1024px) {
-  .diagnostik__img {
-    margin: 0;
-  }
-}
-.diagnostik__info {
   position: relative;
-  margin: 0 -2rem 0 -12.625rem;
-  padding-left: 98px;
-  padding-top: 72px;
-  padding-bottom: 80px;
-  padding-right: 0.9375rem;
 }
-@media (max-width: 1440px) {
-  .diagnostik__info {
-    padding-left: calc(20px + 78 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .diagnostik__info {
-    padding-top: calc(20px + 52 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .diagnostik__info {
-    padding-bottom: calc(20px + 60 * ((100vw - 320px) / 1120));
-  }
-}
-.diagnostik__info::before {
+.diagnostik::before {
   position: absolute;
-  z-index: 0;
-  border-radius: 2.5rem;
   content: "";
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  background: url("../img/diagnostik/03.jpg") no-repeat;
+  background: url("../img/diagnostik/01.png") no-repeat;
   background-size: cover;
 }
-@media (max-width: 1024px) {
-  .diagnostik__info {
-    margin: 0;
+.diagnostik::after {
+  position: absolute;
+  content: "";
+  width: 68.6111111111%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, #000000 -52.96%, rgba(0, 0, 0, 0) 50%);
+  opacity: 0.5;
+  background-size: cover;
+}
+@media (max-width: 767px) {
+  .diagnostik::after {
+    background: linear-gradient(90deg, #fff -52%, rgba(0, 0, 0, 0) 100%);
+    opacity: 1;
+    width: 100%;
   }
 }
-
-.info-diagnostik__wrapp {
+.diagnostik__main {
   position: relative;
-  z-index: 2;
+  z-index: 3;
   color: #000;
+  min-height: 33.9375rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin-bottom: 123px;
+  padding-right: 131px;
+  padding-left: 0.9375rem;
+}
+@media (max-width: 1440px) {
+  .diagnostik__main {
+    margin-bottom: calc(50px + 73 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .diagnostik__main {
+    padding-right: calc(15px + 116 * ((100vw - 320px) / 1120));
+  }
+}
+.diagnostik__body {
+  max-width: 31.625rem;
   display: flex;
   flex-direction: column;
-  max-width: 34.125rem;
-  gap: 1.875rem;
+  gap: 44px;
 }
-.info-diagnostik__btn {
-  max-width: 7.75rem;
-  background: rgba(207, 96, 113, 0.1);
-  color: #CF6071;
-}
-.info-diagnostik__btn span:last-child {
-  padding: 0.1875rem 0 0 0;
-  font-size: 0.9375rem;
-  color: #E06477;
-}
-.info-diagnostik__btn:hover {
-  background: rgba(207, 96, 113, 0.2);
+@media (max-width: 1440px) {
+  .diagnostik__body {
+    gap: calc(20px + 24 * ((100vw - 320px) / 1120));
+  }
 }
 
 /* team */

@@ -72,7 +72,7 @@
   &__wrapp {
     position: fixed;
     z-index: 10;
-    left: rem(130);
+    left: rem(95);
     bottom: rem(128);
   
     @include mq(rem(1380)) {
