@@ -625,9 +625,15 @@ body {
 .vision__main {
   padding-top: 4rem;
   margin-right: 5.875rem;
+  margin-bottom: 90px;
   display: grid;
   justify-content: end;
   grid-template: auto/minmax(auto, 31.25rem) minmax(auto, 32.6875rem);
+}
+@media (max-width: 1440px) {
+  .vision__main {
+    margin-bottom: calc(50px + 40 * ((100vw - 320px) / 1120));
+  }
 }
 @media (max-width: 1024px) {
   .vision__main {
@@ -812,16 +818,25 @@ body {
 
 /* brustchirurgie */
 .brustchirurgie {
-  overflow: hidden;
-  position: relative;
-  margin-bottom: 124px;
+  margin-bottom: 14.25rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1024px) {
   .brustchirurgie {
-    margin-bottom: calc(50px + 74 * ((100vw - 320px) / 1120));
+    margin-bottom: 228px;
   }
 }
-.brustchirurgie::before {
+@media (max-width: 1024px) and (max-width: 1440px) {
+  .brustchirurgie {
+    margin-bottom: calc(50px + 178 * ((100vw - 320px) / 1120));
+  }
+}
+.brustchirurgie__top {
+  overflow: hidden;
+  position: relative;
+  min-height: 31.25rem;
+  padding: 5.625rem 0 0 0;
+}
+.brustchirurgie__top::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -831,105 +846,177 @@ body {
   background: url("../img/brustchirurgie/01.png") no-repeat;
   background-size: cover;
 }
-.brustchirurgie::after {
+.brustchirurgie__top::after {
   position: absolute;
   content: "";
-  width: 68.6111111111%;
+  width: 100%;
   height: 100%;
   left: 0;
   top: 0;
   background: linear-gradient(90deg, #000000 -52.96%, rgba(0, 0, 0, 0) 50%);
   opacity: 0.5;
-  background-size: cover;
 }
-.brustchirurgie__main {
+@media (max-width: 1024px) {
+  .brustchirurgie__top {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+}
+.brustchirurgie__bottom {
+  position: relative;
+  margin-left: -10px;
+  max-height: 26.5625rem;
+}
+@media (max-width: 1440px) {
+  .brustchirurgie__bottom {
+    margin-left: calc(0px + -10 * ((100vw - 320px) / 1120));
+  }
+}
+.brustchirurgie__bottom::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: #000000;
+  opacity: 0.1;
+  backdrop-filter: blur(4px);
+  border-radius: 0 0 2.5rem 2.5rem;
+}
+@media (max-width: 1024px) {
+  .brustchirurgie__bottom {
+    max-height: unset;
+  }
+}
+
+.top-brustchirurgie__main {
   display: flex;
   justify-content: end;
-  padding-top: 75px;
-  padding-bottom: 39px;
 }
-@media (max-width: 1440px) {
-  .brustchirurgie__main {
-    padding-top: calc(30px + 45 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .brustchirurgie__main {
-    padding-bottom: calc(30px + 9 * ((100vw - 320px) / 1120));
-  }
-}
-.brustchirurgie__body {
-  background: rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(4px);
+.top-brustchirurgie__body {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6875rem;
+  max-width: 71.375rem;
+  color: #000;
+  background: #F3F3F3;
+  opacity: 0.9;
   border-radius: 2.5rem;
-  margin: 0 -3.625rem 0 3.625rem;
   padding-left: 64px;
-  padding-top: 31px;
-  padding-bottom: 43px;
-  padding-right: 149px;
+  padding-top: 53px;
+  padding-bottom: 69px;
+  padding-right: 414px;
+  margin-right: -264px;
 }
 @media (max-width: 1440px) {
-  .brustchirurgie__body {
+  .top-brustchirurgie__body {
     padding-left: calc(15px + 49 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
-  .brustchirurgie__body {
-    padding-top: calc(15px + 16 * ((100vw - 320px) / 1120));
+  .top-brustchirurgie__body {
+    padding-top: calc(15px + 38 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
-  .brustchirurgie__body {
-    padding-bottom: calc(15px + 28 * ((100vw - 320px) / 1120));
+  .top-brustchirurgie__body {
+    padding-bottom: calc(15px + 54 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
-  .brustchirurgie__body {
-    padding-right: calc(15px + 134 * ((100vw - 320px) / 1120));
+  .top-brustchirurgie__body {
+    padding-right: calc(15px + 399 * ((100vw - 320px) / 1120));
   }
 }
-@media (max-width: 767px) {
-  .brustchirurgie__body {
-    margin: 0;
-    margin-left: 58px;
+@media (max-width: 1440px) {
+  .top-brustchirurgie__body {
+    margin-right: calc(15px + -279 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) {
+  .top-brustchirurgie__body {
+    padding-right: 150px;
+    margin-right: 0;
+    margin-left: 0.9375rem;
     border-radius: 2.5rem 0 0 2.5rem;
   }
 }
-@media (max-width: 767px) and (max-width: 1440px) {
-  .brustchirurgie__body {
-    margin-left: calc(15px + 43 * ((100vw - 320px) / 1120));
+@media (max-width: 1024px) and (max-width: 1440px) {
+  .top-brustchirurgie__body {
+    padding-right: calc(15px + 135 * ((100vw - 320px) / 1120));
   }
 }
-.brustchirurgie__row:first-child {
-  padding-bottom: 27px;
+
+.bottom-brustchirurgie__main {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: end;
+  padding-right: 66px;
+  padding-left: 25px;
 }
 @media (max-width: 1440px) {
-  .brustchirurgie__row:first-child {
-    padding-bottom: calc(20px + 7 * ((100vw - 320px) / 1120));
+  .bottom-brustchirurgie__main {
+    padding-right: calc(15px + 51 * ((100vw - 320px) / 1120));
   }
-}
-.brustchirurgie__row:last-child {
-  display: flex;
-  gap: 58px;
 }
 @media (max-width: 1440px) {
-  .brustchirurgie__row:last-child {
-    gap: calc(20px + 38 * ((100vw - 320px) / 1120));
+  .bottom-brustchirurgie__main {
+    padding-left: calc(15px + 10 * ((100vw - 320px) / 1120));
   }
 }
-@media (max-width: 767px) {
-  .brustchirurgie__row:last-child {
-    flex-direction: column;
+@media (max-width: 1024px) {
+  .bottom-brustchirurgie__main {
+    padding-bottom: 0.9375rem;
   }
 }
-.brustchirurgie__col:first-child {
-  max-width: 22.875rem;
-}
-.brustchirurgie__col:last-child {
-  max-width: 30.3125rem;
-  display: flex;
-  flex-direction: column;
+.bottom-brustchirurgie__body {
+  padding-top: 49px;
+  display: grid;
   gap: 2rem;
+  grid-template: minmax(31.1875rem, auto)/minmax(auto, 31.25rem) minmax(auto, 26.375rem);
+}
+@media (max-width: 1440px) {
+  .bottom-brustchirurgie__body {
+    padding-top: calc(30px + 19 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) {
+  .bottom-brustchirurgie__body {
+    grid-template: auto minmax(25rem, auto)/1fr;
+  }
+}
+.bottom-brustchirurgie__text {
+  padding-top: 28px;
+}
+@media (max-width: 1440px) {
+  .bottom-brustchirurgie__text {
+    padding-top: calc(0px + 28 * ((100vw - 320px) / 1120));
+  }
+}
+.bottom-brustchirurgie__image img {
+  object-fit: contain;
+}
+.bottom-brustchirurgie__image::before {
+  position: absolute;
+  content: "";
+  width: 115%;
+  height: 115%;
+  left: -2.0625rem;
+  top: 1.375rem;
+  background: url("../../img/brustchirurgie/decore.svg") no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1024px) {
+  .bottom-brustchirurgie__image {
+    max-width: 20.0625rem;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 /* team */

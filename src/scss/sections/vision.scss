@@ -4,6 +4,7 @@
   &__main {
     padding-top: rem(64);
     margin-right: rem(94);
+    @include fit('margin-bottom', 90, 50, 1);
 
     display: grid;
     justify-content: end;
