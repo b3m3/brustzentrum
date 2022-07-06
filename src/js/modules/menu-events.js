@@ -2,7 +2,7 @@ const menuEvents = () => {
   const sections = document.querySelectorAll('.sec');
   const scale = document.querySelector('.menu__scale span');
   const links = document.querySelectorAll('.menu__link');
-  const lvl = [12, 62, 110, 157, 205];
+  const lvl = [12, 60, 107, 155, 205];
 
   const scrollMenu = () => {
     if(sections.length > 0) {
@@ -63,10 +63,10 @@ const menuEvents = () => {
     }
   };
 
-  activeLink('.diagnostik-page', 'Diagnostik');
-  activeLink('.team-page', 'Team');
+  activeLink('.diagnostik-page', 'Unsere Brustdiagnostik');
+  activeLink('.team-page', 'Unser Team');
 
-  if (document.querySelector('.werwir')) {
+  if (document.querySelector('.vision')) {
     scrollMenu();
   
     window.addEventListener('scroll', scrollMenu);

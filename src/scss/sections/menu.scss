@@ -108,17 +108,17 @@
 
   &__scale {
     position: absolute;
-    height: rem(294);
+    height: rem(247);
     width: 1px;
     left: rem(-35);
-    bottom: rem(-15);
+    bottom: rem(-21);
     border: 1px solid rgba(255, 255, 255, .3);
 
     & span {
       position: absolute;
       display: block;
       left: rem(-5);
-      top: rem(12);
+      top: rem(205);
       transition: .3s ease;
       
       &::before {

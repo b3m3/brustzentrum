@@ -569,17 +569,17 @@ body {
 }
 .menu__scale {
   position: absolute;
-  height: 18.375rem;
+  height: 15.4375rem;
   width: 1px;
   left: -2.1875rem;
-  bottom: -0.9375rem;
+  bottom: -1.3125rem;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .menu__scale span {
   position: absolute;
   display: block;
   left: -0.3125rem;
-  top: 0.75rem;
+  top: 12.8125rem;
   transition: 0.3s ease;
 }
 .menu__scale span::before {
