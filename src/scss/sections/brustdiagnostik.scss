@@ -1,0 +1,144 @@
+.brustdiagnostik {
+  overflow: hidden;
+
+  &__main {
+    @include fit('margin-bottom', 88, 50, 1);
+    @include fit('padding-left', 410, -410, 1);
+    @include fit('padding-right', 40, 15, 1);
+
+    @include laptop {
+      padding: 0 rem(15);
+    }
+  }
+  &__top {
+    display: flex;
+    flex-direction: column;
+    max-width: rem(718);
+    @include fit('gap', 36, 20, 1);
+    @include fit('margin-bottom', 87, 80, 1);
+
+    @include laptop {
+      max-width: unset;
+    }
+  }
+  &__body {
+    display: grid;
+    grid-template: minmax(rem(410), auto) / minmax(auto, rem(329)) minmax(auto, rem(842));
+
+    @include laptop {
+      grid-template: auto auto / 1fr;
+    }
+  }
+}
+
+.body-brustdiagnostik {
+  &__icons {
+    position: relative;
+    z-index: 3;
+    max-height: rem(315);
+    margin: rem(57) 0 0 0;
+
+    &::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      background: url('../img/brustdiagnostik/bg.png') no-repeat;
+      background-size: contain;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 2;
+      content: '';
+      left: rem(-19);
+      top: rem(-91);
+      width: 440.83px;
+      height: 406.91px;
+      background: #920016;
+      mix-blend-mode: multiply;
+      opacity: 0.1;
+      filter: blur(100px);
+      transform: rotate(43.55deg);
+    }
+
+    @include laptop {
+      max-height: unset;
+      max-width: rem(329);
+      min-height: rem(315);
+      width: 100%;
+      margin: 0 auto;
+    }
+  }
+  &__icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    &:nth-child(1) {
+      top: rem(-30);
+      left: rem(-12);
+      max-width: rem(144);
+      max-height: rem(140);
+      @include tablet {
+        max-width: rem(100);
+        max-height: rem(96);
+      }
+    }
+
+    &:nth-child(2) {
+      top: rem(-43);
+      right: rem(-28);
+      max-width: rem(148);
+      max-height: rem(201);
+      @include tablet {
+        top: rem(-23);
+        right: 0;
+        max-width: rem(100);
+        max-height: rem(153);
+      }
+    }
+
+    &:nth-child(3) {
+      left: 0;
+      bottom: rem(26);
+      max-width: rem(69);
+      max-height: rem(143);
+      @include tablet {
+        max-width: rem(59);
+        max-height: rem(133);
+      }
+    }
+
+    &:nth-child(4) {
+      right: rem(60);
+      bottom: rem(11);
+      max-width: rem(131);
+      max-height: rem(126);
+      @include tablet {
+        bottom: rem(31);
+        max-width: rem(100);
+        max-height: rem(95);
+      }
+    }
+  }
+  &__info {
+    position: relative;
+    border: 1px solid rgb(255, 255, 255, .3);
+    border-radius: rem(40);
+    @include fit('padding-left', 288, 200, 1);
+
+    @include fit('padding-top', 84, 15, 1);
+    @include fit('padding-right', 62, 15, 1);
+    padding-bottom: rem(15);
+    margin-left: rem(-181);
+
+    @include laptop {
+      margin: -180px 0 0 0;
+      padding: rem(200) rem(15) rem(15) rem(15);
+    }
+  }
+}
