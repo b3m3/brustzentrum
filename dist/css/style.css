@@ -82,6 +82,13 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
+  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Assistant";
+  font-display: swap;
   src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
@@ -94,9 +101,9 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 @font-face {
-  font-family: "Assistant";
+  font-family: "DIN Alternate Bold";
   font-display: swap;
-  src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
+  src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -104,13 +111,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "icomoon";
   font-display: swap;
   src: url("../fonts/icomoon.woff2") format("woff2"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("ttf");
-  font-weight: 400;
-  font-style: normal;
-}
-@font-face {
-  font-family: "DIN Alternate Bold";
-  font-display: swap;
-  src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"), url("../fonts/DIN Alternate Bold.woff") format("woff"), url("../fonts/DIN Alternate Bold.ttf") format("ttf");
   font-weight: 400;
   font-style: normal;
 }
@@ -569,7 +569,7 @@ body {
 }
 .menu__scale {
   position: absolute;
-  height: 15.0625rem;
+  height: 18.375rem;
   width: 1px;
   left: -2.1875rem;
   bottom: -0.9375rem;
@@ -618,151 +618,136 @@ body {
   }
 }
 
-/* werwir */
-.werwir {
+/* vision */
+.vision {
   overflow: hidden;
 }
-.werwir__main {
-  position: relative;
-  padding-right: 91px;
+.vision__main {
   padding-top: 4rem;
-  justify-content: end;
+  padding-bottom: 90px;
+  margin-right: 5.875rem;
   display: grid;
-  grid-template: minmax(51.375rem, 1fr)/minmax(auto, 29.1875rem) minmax(auto, 33.9375rem);
+  justify-content: end;
+  grid-template: auto/minmax(auto, 31.25rem) minmax(auto, 32.6875rem);
 }
 @media (max-width: 1440px) {
-  .werwir__main {
-    padding-right: calc(0px + 91 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 71.875rem) {
-  .werwir__main {
-    justify-content: space-between;
-    padding-right: 50px;
-    padding-left: 50px;
-  }
-}
-@media (max-width: 71.875rem) and (max-width: 1440px) {
-  .werwir__main {
-    padding-right: calc(15px + 35 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 71.875rem) and (max-width: 1440px) {
-  .werwir__main {
-    padding-left: calc(15px + 35 * ((100vw - 320px) / 1120));
+  .vision__main {
+    padding-bottom: calc(50px + 40 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1024px) {
-  .werwir__main {
-    gap: 1.25rem;
-    grid-template: auto minmax(18.75rem, auto)/1fr;
+  .vision__main {
+    margin: 0 0.9375rem;
+    justify-content: unset;
+    gap: 1.875rem;
+    grid-template: auto auto/1fr;
   }
 }
-.werwir__info {
-  margin-top: 44px;
-}
-@media (max-width: 1440px) {
-  .werwir__info {
-    margin-top: calc(80px + -36 * ((100vw - 320px) / 1120));
-  }
-}
-.werwir__image {
+.vision__info {
   position: relative;
-}
-.werwir__image::before {
-  position: absolute;
-  content: "";
-  width: 36rem;
-  height: 51.375rem;
-  top: -0.6875rem;
-  right: -52px;
-  background: url("../img/werwir/decore.svg") no-repeat;
-  background-size: contain;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding-top: 233px;
+  margin-right: -94px;
+  margin-left: 94px;
 }
 @media (max-width: 1440px) {
-  .werwir__image::before {
-    right: calc(-100px + 48 * ((100vw - 320px) / 1120));
+  .vision__info {
+    gap: calc(20px + 13 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .vision__info {
+    padding-top: calc(-130px + 363 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .vision__info {
+    margin-right: calc(0px + -94 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .vision__info {
+    margin-left: calc(-20px + 114 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1024px) {
-  .werwir__image::before {
-    right: 50%;
-    top: -3.125rem;
-    transform: translateX(50%);
-    width: 17.25rem;
-    height: 32.625rem;
-  }
-}
-@media (max-width: 1024px) {
-  .werwir__image {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-}
-
-.info-werwir__logo {
-  margin: 0 0 0 -4.9375rem;
-  width: 15.625rem;
-  height: 6.4375rem;
-}
-.info-werwir__logo img {
-  object-fit: contain;
-}
-@media (max-width: 71.875rem) {
-  .info-werwir__logo {
+  .vision__info {
+    padding-top: 1.875rem;
     margin: 0;
   }
 }
-.info-werwir__title {
-  margin-top: 75px;
-  margin-bottom: 38px;
+.vision__image {
+  position: relative;
+  max-height: 41.5rem;
+  min-height: 25rem;
+  height: 100%;
 }
-@media (max-width: 1440px) {
-  .info-werwir__title {
-    margin-top: calc(20px + 55 * ((100vw - 320px) / 1120));
+@media (max-width: 1024px) {
+  .vision__image {
+    max-width: 32.6875rem;
+    margin: 0 auto;
+    width: 100%;
   }
 }
+.vision__image::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #c03649;
+  opacity: 1;
+  filter: blur(100px);
+}
+.vision__image::after {
+  position: absolute;
+  content: "";
+  left: 0px;
+  top: -11px;
+  width: calc(100% + 40px);
+  height: calc(100% + 50px);
+  background: url("../../img/vision/decore.svg") no-repeat;
+  background-size: contain;
+}
 @media (max-width: 1440px) {
-  .info-werwir__title {
-    margin-bottom: calc(20px + 18 * ((100vw - 320px) / 1120));
+  .vision__image::after {
+    left: calc(200px + -200 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) {
+  .vision__image::after {
+    left: 102px;
+  }
+}
+@media (max-width: 32.6875rem) {
+  .vision__image::after {
+    left: 400px;
+  }
+}
+@media (max-width: 32.6875rem) and (max-width: 1440px) {
+  .vision__image::after {
+    left: calc(0px + 400 * ((100vw - 320px) / 1120));
   }
 }
 
-.image-werwir__img {
-  position: relative;
-  display: flex;
-  min-width: 17.5rem;
-  width: 100%;
+.info-vision__title {
+  max-width: 24.25rem;
+}
+@media (max-width: 1024px) {
+  .info-vision__title {
+    max-width: unset;
+  }
+}
+
+.image-vision__img {
   height: 100%;
 }
-.image-werwir__img img {
+.image-vision__img img {
   object-fit: contain;
-}
-@media (max-width: 1024px) {
-  .image-werwir__img img {
-    object-fit: cover;
-  }
-}
-.image-werwir__img::before {
-  position: absolute;
-  content: "";
-  left: -12px;
-  top: 50%;
-  transform: translate(0, -50%);
-  width: 44.125rem;
-  height: 44.125rem;
-  background: #920016;
-  mix-blend-mode: multiply;
-  opacity: 0.3;
-  filter: blur(100px);
-}
-@media (max-width: 1024px) {
-  .image-werwir__img::before {
-    width: 25.375rem;
-    height: 25.375rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
 }
 
 /* diagnostik */

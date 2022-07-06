@@ -10,6 +10,15 @@
 @font-face {
 	font-family: 'Assistant';
 	font-display: swap;
+	src: url("../fonts/Assistant-Regular.woff2") format("woff2"),
+	 url("../fonts/Assistant-Regular.woff") format("woff"),
+	 url("../fonts/Assistant-Regular.ttf") format("ttf"); 
+	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Assistant';
+	font-display: swap;
 	src: url("../fonts/Assistant-Light.woff2") format("woff2"),
 	 url("../fonts/Assistant-Light.woff") format("woff"),
 	 url("../fonts/Assistant-Light.ttf") format("ttf"); 
@@ -26,11 +35,11 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Assistant';
+	font-family: 'DIN Alternate Bold';
 	font-display: swap;
-	src: url("../fonts/Assistant-Regular.woff2") format("woff2"),
-	 url("../fonts/Assistant-Regular.woff") format("woff"),
-	 url("../fonts/Assistant-Regular.ttf") format("ttf"); 
+	src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"),
+	 url("../fonts/DIN Alternate Bold.woff") format("woff"),
+	 url("../fonts/DIN Alternate Bold.ttf") format("ttf"); 
 	font-weight: 400;
 	font-style: normal;
 }
@@ -40,15 +49,6 @@
 	src: url("../fonts/icomoon.woff2") format("woff2"),
 	 url("../fonts/icomoon.woff") format("woff"),
 	 url("../fonts/icomoon.ttf") format("ttf"); 
-	font-weight: 400;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'DIN Alternate Bold';
-	font-display: swap;
-	src: url("../fonts/DIN Alternate Bold.woff2") format("woff2"),
-	 url("../fonts/DIN Alternate Bold.woff") format("woff"),
-	 url("../fonts/DIN Alternate Bold.ttf") format("ttf"); 
 	font-weight: 400;
 	font-style: normal;
 }
