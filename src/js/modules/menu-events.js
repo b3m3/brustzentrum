@@ -4,6 +4,27 @@ const menuEvents = () => {
   const links = document.querySelectorAll('.menu__link');
   const lvl = [12, 60, 107, 155, 205];
 
+  if (document.querySelector('.vision')) {
+    for (const key in localStorage) {
+  
+      if (key.slice(0, 4) === 'menu') {
+
+        const getSection = (name, num) => {
+          if (key.slice(-3) == name) {
+            setTimeout(() => {
+              links[num].click();
+              localStorage.clear();
+            }, 1000);
+          }
+        };
+  
+        getSection('tik', 1);
+        getSection('gie', 2);
+        getSection('akt', 4);
+      }
+    }
+  }
+
   const scrollMenu = () => {
     if(sections.length > 0) {
       const offset = (el) => {
@@ -56,14 +77,18 @@ const menuEvents = () => {
   
         if (link.textContent !== linkText) {
           link.addEventListener('click', () => {
+            localStorage.setItem(`menu ${link.textContent.slice(-3)}`, '');
+
             location.href='index.html';
           });
         }
+
       });
     }
+
+    
   };
 
-  activeLink('.diagnostik-page', 'Unsere Brustdiagnostik');
   activeLink('.team-page', 'Unser Team');
 
   if (document.querySelector('.vision')) {
