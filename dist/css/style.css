@@ -734,10 +734,9 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: #c5364a;
   filter: blur(100px);
   -webkit-filter: blur(100px);
-  -moz-filter: blur(100px);
-  background-color: rgb(192, 54, 73);
 }
 .vision__image::after {
   position: absolute;
