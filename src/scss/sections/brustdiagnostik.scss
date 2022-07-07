@@ -1,0 +1,120 @@
+.brustdiagnostik {
+  overflow: hidden;
+  margin-top: rem(-97);
+
+  @include laptop {
+    margin-top: rem(50);
+  }
+
+  &__main {
+    @include fit('margin-bottom', 82, 50, 1);
+    padding-left: rem(15);
+
+    & img {
+      object-fit: contain;
+    }
+
+    @include laptop {
+      display: flex;
+      flex-direction: column;
+      gap: rem(30);
+      padding: 0 rem(15);
+    }
+  }
+  &__top {
+    display: grid;
+    @include fit('gap', 69, 30, 1);
+    justify-content: end;
+    grid-template: minmax(rem(543), auto) / minmax(auto, rem(574)) minmax(auto, rem(524));
+    margin-right: rem(-141);
+
+    @include laptop {
+      grid-template: auto minmax(rem(300), auto) / 1fr;
+      justify-content: center;
+      gap: rem(20);
+      margin: 0;
+    }
+  }
+  &__bottom {
+    display: grid;
+    @include fit('gap', 51, 30, 1);
+    justify-content: end;
+    grid-template: minmax(rem(501), auto) / minmax(auto, rem(467)) minmax(auto, rem(478));
+    @include fit('padding-right', 211, -300, 1);
+
+    @include laptop {
+      grid-template: auto minmax(rem(300), auto) / 1fr;
+      justify-content: center;
+      gap: rem(20);
+      padding: 0;
+    }
+  }
+}
+
+.top-brustdiagnostik {
+  &__col {
+    display: flex;
+    flex-direction: column;
+    gap: rem(36);
+    padding: rem(174) 0 0 0;
+
+    @include laptop {
+      gap: rem(20);
+      padding: 0;
+    }
+  }
+  &__img {
+    &::before {
+      position: absolute;
+      content: '';
+      width: rem(436);
+      height: rem(760);
+      left: rem(-10);
+      top: rem(-60);
+      background: url('../../img/brustdiagnostik/01.svg') no-repeat;
+      background-size: contain;
+
+      @include laptop {
+        left: 50%;
+        top: rem(-40);
+        width: rem(236);
+        height: rem(460);
+        transform: translate(-65%, 0);
+      }
+    }
+  }
+}
+
+.bottom-brustdiagnostik {
+  &__col {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: rem(145) 0 0 0;
+
+    @include laptop {
+      grid-column: unset;
+      grid-row: unset;
+      padding: 0;
+    }
+  }
+  &__img {
+    &::before {
+      position: absolute;
+      content: '';
+      width: rem(533);
+      height: rem(553);
+      left: rem(-40);
+      top: rem(-28);
+      background: url('../../img/brustdiagnostik/02.svg') no-repeat;
+      background-size: contain;
+
+      @include laptop {
+        left: 50%;
+        top: rem(-10);
+        width: rem(333);
+        height: rem(353);
+        transform: translate(-55%, 0);
+      }
+    }
+  }
+}

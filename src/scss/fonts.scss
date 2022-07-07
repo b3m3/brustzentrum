@@ -1,15 +1,6 @@
 @font-face {
 	font-family: 'Assistant';
 	font-display: swap;
-	src: url("../fonts/Assistant-Bold.woff2") format("woff2"),
-	 url("../fonts/Assistant-Bold.woff") format("woff"),
-	 url("../fonts/Assistant-Bold.ttf") format("ttf"); 
-	font-weight: 700;
-	font-style: normal;
-}
-@font-face {
-	font-family: 'Assistant';
-	font-display: swap;
 	src: url("../fonts/Assistant-Light.woff2") format("woff2"),
 	 url("../fonts/Assistant-Light.woff") format("woff"),
 	 url("../fonts/Assistant-Light.ttf") format("ttf"); 
@@ -23,6 +14,15 @@
 	 url("../fonts/Assistant-Regular.woff") format("woff"),
 	 url("../fonts/Assistant-Regular.ttf") format("ttf"); 
 	font-weight: 400;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Assistant';
+	font-display: swap;
+	src: url("../fonts/Assistant-Bold.woff2") format("woff2"),
+	 url("../fonts/Assistant-Bold.woff") format("woff"),
+	 url("../fonts/Assistant-Bold.ttf") format("ttf"); 
+	font-weight: 700;
 	font-style: normal;
 }
 @font-face {

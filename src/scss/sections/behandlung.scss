@@ -44,7 +44,6 @@
     z-index: 3;
     color: #000;
     min-height: rem(500);
-    @include fit('margin-bottom', 123, 50, 1);
     @include fit('padding-top', 87, 15, 1);
     @include fit('padding-bottom', 87, 15, 1);
     @include fit('padding-left', 626, 30, 1);

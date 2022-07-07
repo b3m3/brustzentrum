@@ -75,13 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Assistant";
-  font-display: swap;
   src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
@@ -91,6 +84,13 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
   src: url("../fonts/Assistant-Regular.woff2") format("woff2"), url("../fonts/Assistant-Regular.woff") format("woff"), url("../fonts/Assistant-Regular.ttf") format("ttf");
   font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Assistant";
+  font-display: swap;
+  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -798,16 +798,10 @@ body {
   z-index: 3;
   color: #000;
   min-height: 31.25rem;
-  margin-bottom: 123px;
   padding-top: 87px;
   padding-bottom: 87px;
   padding-left: 626px;
   padding-right: 0.9375rem;
-}
-@media (max-width: 1440px) {
-  .behandlung__main {
-    margin-bottom: calc(50px + 73 * ((100vw - 320px) / 1120));
-  }
 }
 @media (max-width: 1440px) {
   .behandlung__main {
@@ -833,6 +827,146 @@ body {
 @media (max-width: 1440px) {
   .behandlung__body {
     gap: calc(20px + 24 * ((100vw - 320px) / 1120));
+  }
+}
+
+/* brustdiagnostik */
+.brustdiagnostik {
+  overflow: hidden;
+  margin-top: -6.0625rem;
+}
+@media (max-width: 1024px) {
+  .brustdiagnostik {
+    margin-top: 3.125rem;
+  }
+}
+.brustdiagnostik__main {
+  margin-bottom: 82px;
+  padding-left: 0.9375rem;
+}
+@media (max-width: 1440px) {
+  .brustdiagnostik__main {
+    margin-bottom: calc(50px + 32 * ((100vw - 320px) / 1120));
+  }
+}
+.brustdiagnostik__main img {
+  object-fit: contain;
+}
+@media (max-width: 1024px) {
+  .brustdiagnostik__main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.875rem;
+    padding: 0 0.9375rem;
+  }
+}
+.brustdiagnostik__top {
+  display: grid;
+  gap: 69px;
+  justify-content: end;
+  grid-template: minmax(33.9375rem, auto)/minmax(auto, 35.875rem) minmax(auto, 32.75rem);
+  margin-right: -8.8125rem;
+}
+@media (max-width: 1440px) {
+  .brustdiagnostik__top {
+    gap: calc(30px + 39 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) {
+  .brustdiagnostik__top {
+    grid-template: auto minmax(18.75rem, auto)/1fr;
+    justify-content: center;
+    gap: 1.25rem;
+    margin: 0;
+  }
+}
+.brustdiagnostik__bottom {
+  display: grid;
+  gap: 51px;
+  justify-content: end;
+  grid-template: minmax(31.3125rem, auto)/minmax(auto, 29.1875rem) minmax(auto, 29.875rem);
+  padding-right: 211px;
+}
+@media (max-width: 1440px) {
+  .brustdiagnostik__bottom {
+    gap: calc(30px + 21 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .brustdiagnostik__bottom {
+    padding-right: calc(-300px + 511 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) {
+  .brustdiagnostik__bottom {
+    grid-template: auto minmax(18.75rem, auto)/1fr;
+    justify-content: center;
+    gap: 1.25rem;
+    padding: 0;
+  }
+}
+
+.top-brustdiagnostik__col {
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+  padding: 10.875rem 0 0 0;
+}
+@media (max-width: 1024px) {
+  .top-brustdiagnostik__col {
+    gap: 1.25rem;
+    padding: 0;
+  }
+}
+.top-brustdiagnostik__img::before {
+  position: absolute;
+  content: "";
+  width: 27.25rem;
+  height: 47.5rem;
+  left: -0.625rem;
+  top: -3.75rem;
+  background: url("../../img/brustdiagnostik/01.svg") no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1024px) {
+  .top-brustdiagnostik__img::before {
+    left: 50%;
+    top: -2.5rem;
+    width: 14.75rem;
+    height: 28.75rem;
+    transform: translate(-65%, 0);
+  }
+}
+
+.bottom-brustdiagnostik__col {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  padding: 9.0625rem 0 0 0;
+}
+@media (max-width: 1024px) {
+  .bottom-brustdiagnostik__col {
+    grid-column: unset;
+    grid-row: unset;
+    padding: 0;
+  }
+}
+.bottom-brustdiagnostik__img::before {
+  position: absolute;
+  content: "";
+  width: 33.3125rem;
+  height: 34.5625rem;
+  left: -2.5rem;
+  top: -1.75rem;
+  background: url("../../img/brustdiagnostik/02.svg") no-repeat;
+  background-size: contain;
+}
+@media (max-width: 1024px) {
+  .bottom-brustdiagnostik__img::before {
+    left: 50%;
+    top: -0.625rem;
+    width: 20.8125rem;
+    height: 22.0625rem;
+    transform: translate(-55%, 0);
   }
 }
 
