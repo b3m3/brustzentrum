@@ -12,6 +12,7 @@ const parallax = () => {
     null;
 
   const checkSize = width => {
+
     if (document.documentElement.clientWidth > width) {
       window.addEventListener('scroll', scroll);
     } else {
@@ -20,10 +21,10 @@ const parallax = () => {
     }
   };
 
-  // if (document.querySelector('.team')) {
-  //   checkSize(550);
-  //   window.addEventListener('resize', () => checkSize(550));
-  // }
+  if (section) {
+    checkSize(550);
+    window.addEventListener('resize', () => checkSize(550));
+  }
 };
 
 export default parallax;
