@@ -1,49 +1,45 @@
 .footer {
   overflow: hidden;
+
   &__main {
     position: relative;
     z-index: 2;
-    padding-right: rem(15);
-    @include fit('padding-top', 21, 25, 1);
-    @include fit('padding-bottom', 101, 50, 1);
+    @include fit('padding-bottom', 82, 50, 1);
+    margin-left: rem(-39);
 
     display: grid;
-    grid-template: minmax(rem(401), auto) / minmax(auto, rem(509)) minmax(auto, rem(289)) minmax(auto, rem(434));
-    @include fit('gap', 68, 15, 1);
+    @include fit('gap', 69, -69, 1);
+    grid-template: minmax(rem(401), auto) / minmax(auto, rem(548)) minmax(auto, rem(490)) minmax(auto, rem(235));
 
     @include laptop {
-      padding-left: rem(15);
       grid-template: minmax(rem(401), auto) auto auto / 1fr;
-    }
-  }
-  &__map {
-    @include fit('margin-left', -39, 15, 1);
+      gap: rem(30);
+      margin-left: 0;
+      padding-left: rem(15);
+      padding-right: rem(15);
 
-    @include laptop {
-      max-width: rem(548);
-      width: 100%;
-      margin-left: unset;
-      margin: 0 auto;
+      & br {
+        display: none;
+      }
     }
   }
   &__contacts {
     display: flex;
     flex-direction: column;
-    gap: rem(30);
+    gap: rem(21);
 
     @include laptop {
       gap: rem(15);
     }
-
   }
   &__info {
-    display: flex;
-    flex-direction: column;
-    gap: rem(15);
-    padding-top: rem(81);
+    align-self: end;
+    margin-left: rem(-27);
+    margin-bottom: rem(30);
 
     @include laptop {
-      padding-top: rem(15);
+      align-self: unset;
+      margin: 0;
     }
   }
 }
@@ -54,70 +50,69 @@
     height: 100%;
     border-radius: rem(40);
     overflow: hidden;
+
+    @include laptop {
+      max-width: rem(548);
+    }
   }
   &__location {
     position: absolute;
     width: rem(49);
     height: rem(49);
-    @include fit('right', 165, -250, 1);
     top: rem(123);
     font-size: rem(46);
 
-    @include laptop {
-      right: rem(167);
+    @include fit('left', 333, 359, 1);
+
+    @include mq(rem(1349)) {
+      @include fit('left', 360, -40, 1);
     }
-    @include mq(rem(583)) {
-      right: unset;
-      @include fit('left', 760, 203, 1);
+
+    @include laptop {
+      left: rem(333)
+    }
+
+    @include mq(rem(578)) {
+      @include fit('left', 750, 205, 1);
     }
   }
 }
 
 .contacts-footer {
   &__row {
-    display: flex;
-    flex-direction: column;
-    gap: rem(3);
-    
-    &:nth-child(1) {
-      padding-bottom: rem(3);
+    &:first-child {
+      padding: rem(20) 0 rem(5) 0;
+
+      @include laptop {
+        padding: 0;
+      }
     }
   }
   &__subtitle {
     font-weight: 700;
-    @include fit('line-height', 26, 20, 1);
-    
-    &_big {
-      padding-bottom: rem(2);
-      @include fit('font-size', 24, 22, 1);
-    }
+    @include fit('font-size', 24, 22, 1);
+    @include fit('line-height', 32, 28, 1);
   }
   &__text {
     @include fit('font-size', 24, 18, 1);
     @include fit('line-height', 32, 28, 1);
   }
   &__link {
-    @include fit('font-size', 24, 18, 1);
-    @include fit('line-height', 31, 28, 1);
     color: #fff;
-
-    &_mail {
-      text-decoration: underline;
-    }
+  }
+  &__mail {
+    text-decoration: underline;
   }
 }
 
 .info-footer {
-  &__subtitle {
-    display: flex;
-    align-items: center;
-    gap: rem(10);
-    font-weight: 700;
-    @include fit('font-size', 20, 18, 1);
-    @include fit('line-height', 32, 28, 1);
+  &__logo {
+    max-width: rem(235);
+    width: 100%;
+    height: rem(42);
 
-    & span {
-      @include fit('font-size', 28, 24, 1);
+    & img {
+      object-fit: contain;
     }
   }
 }
