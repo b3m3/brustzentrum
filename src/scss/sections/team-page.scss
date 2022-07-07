@@ -121,7 +121,7 @@
     &.show-pointer {
       @include fit('bottom', 8, 40, 1);
       opacity: 1;
-      transition: .7s ease;
+      transition: .8s ease;
     }
   }
 }

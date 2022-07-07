@@ -435,6 +435,7 @@ body {
 
 .logo {
   position: fixed;
+  z-index: 10;
   top: 4.5625rem;
   left: 2.6875rem;
   width: 17.125rem;
@@ -575,7 +576,7 @@ body {
     background-color: rgba(0, 0, 0, 0.7);
     opacity: 0;
     pointer-events: none;
-    transition: 0.8s ease;
+    transition: 0.3s ease;
   }
   .menu__wrapp .menu__scale {
     display: none;
@@ -734,7 +735,8 @@ body {
   width: 100%;
   height: 100%;
   background: #c03649;
-  opacity: 1;
+  opacity: 0.8;
+  -webkit-filter: blur(100px);
   filter: blur(100px);
 }
 .vision__image::after {
@@ -959,7 +961,7 @@ body {
   height: 47.5rem;
   left: -0.625rem;
   top: -3.75rem;
-  background: url("../../img/brustdiagnostik/01.svg") no-repeat;
+  background: url("../img/brustdiagnostik/01.svg") no-repeat;
   background-size: contain;
 }
 @media (max-width: 1024px) {
@@ -991,7 +993,7 @@ body {
   height: 34.5625rem;
   left: -2.5rem;
   top: -1.75rem;
-  background: url("../../img/brustdiagnostik/02.svg") no-repeat;
+  background: url("../img/brustdiagnostik/02.svg") no-repeat;
   background-size: contain;
 }
 @media (max-width: 1024px) {
@@ -1733,7 +1735,7 @@ body {
 .drs-team-page__p.show-pointer {
   bottom: 8px;
   opacity: 1;
-  transition: 0.7s ease;
+  transition: 0.8s ease;
 }
 @media (max-width: 1440px) {
   .drs-team-page__p.show-pointer {
