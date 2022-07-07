@@ -14,7 +14,7 @@ const menuEvents = () => {
             setTimeout(() => {
               links[num].click();
               localStorage.clear();
-            }, 800);
+            }, 1000);
           }
 
           if (key.slice(-3) == 'ion') {
