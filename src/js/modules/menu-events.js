@@ -86,11 +86,8 @@ const menuEvents = () => {
             location.href='index.html';
           });
         }
-
       });
     }
-
-    
   };
 
   activeLink('.team-page', 'Unser Team');
