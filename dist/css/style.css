@@ -75,13 +75,6 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
-  font-weight: 700;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Assistant";
-  font-display: swap;
   src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
   font-weight: 300;
   font-style: normal;
@@ -98,6 +91,13 @@ h1, h2, h3, h4, h5, h6 {
   font-display: swap;
   src: url("../fonts/Assistant-SemiBold.woff2") format("woff2"), url("../fonts/Assistant-SemiBold.woff") format("woff"), url("../fonts/Assistant-SemiBold.ttf") format("ttf");
   font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Assistant";
+  font-display: swap;
+  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
@@ -734,8 +734,9 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: #c5364a;
+  background-color: rgb(197, 54, 74);
   -webkit-filter: blur(100px);
+  -moz-filter: blur(100px);
   filter: blur(100px);
 }
 .vision__image::after {
