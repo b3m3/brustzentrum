@@ -1,6 +1,5 @@
 .team {
   position: relative;
-  overflow: hidden;
   @include fit('margin-bottom', 60, 50, 1);
   
   &__bg {
@@ -12,6 +11,9 @@
     top: 0;
     object-fit: cover;
     object-position: 0% 0%;
+    filter: blur(2px);
+    transition: .1s;
+    transform: translateY(-1px);
   }
   &__main {
     position: relative;

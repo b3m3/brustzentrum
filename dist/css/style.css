@@ -1212,7 +1212,6 @@ body {
 /* team */
 .team {
   position: relative;
-  overflow: hidden;
   margin-bottom: 60px;
 }
 @media (max-width: 1440px) {
@@ -1229,6 +1228,9 @@ body {
   top: 0;
   object-fit: cover;
   object-position: 0% 0%;
+  filter: blur(2px);
+  transition: 0.1s;
+  transform: translateY(-1px);
 }
 .team__main {
   position: relative;
