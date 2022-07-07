@@ -42,3 +42,23 @@
     background: rgba(255, 255, 255, 0.3);
   }
 }
+
+.logo {
+  position: fixed;
+  top: rem(73);
+  left: rem(43);
+  width: rem(274);
+  height: rem(105);
+
+  &__image {
+    height: 100%;
+
+    & img {
+      object-fit: contain;
+    }
+  }
+
+  @include mq(rem(1380)) {
+    display: none;
+  }
+}

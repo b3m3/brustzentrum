@@ -433,6 +433,25 @@ body {
   background: rgba(255, 255, 255, 0.3);
 }
 
+.logo {
+  position: fixed;
+  top: 4.5625rem;
+  left: 2.6875rem;
+  width: 17.125rem;
+  height: 6.5625rem;
+}
+.logo__image {
+  height: 100%;
+}
+.logo__image img {
+  object-fit: contain;
+}
+@media (max-width: 86.25rem) {
+  .logo {
+    display: none;
+  }
+}
+
 /* ======== index ======== */
 /* header */
 .header {
@@ -532,11 +551,19 @@ body {
     display: block;
   }
 }
+.menu__logo {
+  position: fixed;
+  z-index: 10;
+  width: 17.125rem;
+  height: 6.5625rem;
+  left: 2.6875rem;
+  top: 4.5625rem;
+}
 .menu__wrapp {
   position: fixed;
   z-index: 10;
   left: 5.9375rem;
-  bottom: 8rem;
+  top: 19.5rem;
 }
 @media (max-width: 86.25rem) {
   .menu__wrapp {
@@ -616,6 +643,13 @@ body {
     font-size: 1.125rem;
     font-weight: 400;
   }
+}
+
+.logo-menu__img {
+  height: 100%;
+}
+.logo-menu__img img {
+  object-fit: contain;
 }
 
 /* vision */

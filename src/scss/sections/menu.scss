@@ -68,12 +68,19 @@
       display: block;
     }
   }
-
+  &__logo {
+    position: fixed;
+    z-index: 10;
+    width: rem(274);
+    height: rem(105);
+    left: rem(43);
+    top: rem(73);
+  }
   &__wrapp {
     position: fixed;
     z-index: 10;
     left: rem(95);
-    bottom: rem(128);
+    top: rem(312);
   
     @include mq(rem(1380)) {
       width: 100%;
@@ -105,7 +112,6 @@
       }
     }
   }
-
   &__scale {
     position: absolute;
     height: rem(247);
@@ -157,6 +163,15 @@
       display: block;
       font-size: rem(18);
       font-weight: 400;
+    }
+  }
+}
+
+.logo-menu {
+  &__img {
+    height: 100%;
+    & img {
+      object-fit: contain;
     }
   }
 }
