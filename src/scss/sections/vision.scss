@@ -92,6 +92,7 @@
 .image-vision {
   &__img {
     height: 100%;
+    z-index: 3;
 
     & img {
       object-fit: contain;

@@ -784,6 +784,7 @@ body {
 
 .image-vision__img {
   height: 100%;
+  z-index: 3;
 }
 .image-vision__img img {
   object-fit: contain;
