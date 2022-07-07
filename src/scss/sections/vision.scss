@@ -51,10 +51,10 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgb(197, 54, 74);
+      filter: blur(100px);
       -webkit-filter: blur(100px);
       -moz-filter: blur(100px);
-      filter: blur(100px);
+      background-color: rgba(192, 54, 73);
     }
 
     &::after {
