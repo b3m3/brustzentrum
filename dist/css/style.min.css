@@ -630,6 +630,12 @@ body {
   transform: translate(-50%);
   background: url("../../img/BZ.svg") no-repeat;
   background-size: contain;
+  display: none;
+}
+@media (max-width: 86.25rem) {
+  .menu__list::before {
+    display: block;
+  }
 }
 @media (max-width: 86.25rem) {
   .menu li:last-child {
@@ -783,58 +789,59 @@ body {
 }
 .image-vision__img img {
   position: absolute;
-  object-fit: contain;
-  left: -250px;
-  top: -200px;
-  width: 1000px;
-  height: 1000px;
+  object-fit: cover;
+  top: -150px;
+  left: -220px;
+  width: 920px;
+  height: 920px;
 }
 @media (max-width: 1440px) {
   .image-vision__img img {
-    left: calc(0px + -250 * ((100vw - 320px) / 1120));
+    top: calc(-100px + -50 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
   .image-vision__img img {
-    top: calc(-100px + -100 * ((100vw - 320px) / 1120));
+    left: calc(100px + -320 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
   .image-vision__img img {
-    width: calc(300px + 700 * ((100vw - 320px) / 1120));
+    width: calc(200px + 720 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
   .image-vision__img img {
-    height: calc(300px + 700 * ((100vw - 320px) / 1120));
+    height: calc(200px + 720 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1024px) {
   .image-vision__img img {
-    left: -80px;
-    top: -240px;
-    width: 850px;
-    height: 850px;
+    object-fit: contain;
+    width: 800px;
+    height: 800px;
+    top: -200px;
+    left: -50px;
   }
 }
 @media (max-width: 1024px) and (max-width: 1440px) {
   .image-vision__img img {
-    left: calc(-200px + 120 * ((100vw - 320px) / 1120));
+    width: calc(600px + 200 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1024px) and (max-width: 1440px) {
   .image-vision__img img {
-    top: calc(-170px + -70 * ((100vw - 320px) / 1120));
+    height: calc(600px + 200 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1024px) and (max-width: 1440px) {
   .image-vision__img img {
-    width: calc(700px + 150 * ((100vw - 320px) / 1120));
+    top: calc(-100px + -100 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1024px) and (max-width: 1440px) {
   .image-vision__img img {
-    height: calc(700px + 150 * ((100vw - 320px) / 1120));
+    left: calc(-150px + 100 * ((100vw - 320px) / 1120));
   }
 }
 

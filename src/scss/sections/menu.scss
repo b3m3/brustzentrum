@@ -150,6 +150,12 @@
       transform: translate(-50%);
       background: url('../../img/BZ.svg') no-repeat;
       background-size: contain;
+
+      display: none;
+
+      @include mq(rem(1380)) {
+        display: block;
+      }
     }
   }
   & li {
