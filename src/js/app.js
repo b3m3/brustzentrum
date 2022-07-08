@@ -6,7 +6,7 @@ import teamInfo from './modules/team-info.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
-
+  
   burger();
   parallax();
   menuEvents();
