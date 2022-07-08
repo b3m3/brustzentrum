@@ -628,7 +628,7 @@ body {
   width: 50px;
   height: 60px;
   transform: translate(-50%);
-  background: url("../../img/BZ.svg") no-repeat;
+  background: url("../img/BZ.svg") no-repeat;
   background-size: contain;
   display: none;
 }
@@ -761,17 +761,12 @@ body {
 }
 @media (max-width: 1024px) {
   .vision__image::after {
-    left: 102px;
+    left: 170px;
   }
 }
-@media (max-width: 32.6875rem) {
+@media (max-width: 1024px) and (max-width: 1440px) {
   .vision__image::after {
-    left: 400px;
-  }
-}
-@media (max-width: 32.6875rem) and (max-width: 1440px) {
-  .vision__image::after {
-    left: calc(0px + 400 * ((100vw - 320px) / 1120));
+    left: calc(0px + 170 * ((100vw - 320px) / 1120));
   }
 }
 
