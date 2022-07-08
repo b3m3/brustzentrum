@@ -45,16 +45,19 @@
     }
 
     &::before {
-      position: absolute;
-      content: '';
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(192, 54, 73, 0.9);
-      -webkit-filter: blur(100px);
-      -moz-filter: blur(100px);
-      filter: blur(100px);
+      // position: absolute;
+      // z-index: 3;
+      // opacity: .3;
+      // content: '';
+      // left: 0;
+      // top: 0;
+      // width: 800px;
+      // height: 900px;
+      // background: url('../../img/vision/22.png') no-repeat;
+      // background-color: rgba(192, 54, 73, 0.9);
+      // -webkit-filter: blur(100px);
+      // -moz-filter: blur(100px);
+      // filter: blur(100px);
     }
 
     &::after {
@@ -91,7 +94,21 @@
     height: 100%;
 
     & img {
+      position: absolute;
       object-fit: contain;
+      @include fit('left', -250, 0, 1);
+      @include fit('top', -200, -100, 1);
+
+      @include fit('width', 1000, 300, 1);
+      @include fit('height', 1000, 300, 1);
+
+      @include laptop {
+        @include fit('left', -80, -200, 1);
+        @include fit('top', -240, -170, 1);
+  
+        @include fit('width', 850, 700, 1);
+        @include fit('height', 850, 700, 1);
+      }
     }
   }
 }

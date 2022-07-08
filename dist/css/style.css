@@ -75,15 +75,15 @@ h1, h2, h3, h4, h5, h6 {
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
-  font-weight: 300;
+  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
+  font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Assistant";
   font-display: swap;
-  src: url("../fonts/Assistant-Bold.woff2") format("woff2"), url("../fonts/Assistant-Bold.woff") format("woff"), url("../fonts/Assistant-Bold.ttf") format("ttf");
-  font-weight: 700;
+  src: url("../fonts/Assistant-Light.woff2") format("woff2"), url("../fonts/Assistant-Light.woff") format("woff"), url("../fonts/Assistant-Light.ttf") format("ttf");
+  font-weight: 300;
   font-style: normal;
 }
 @font-face {
@@ -620,6 +620,17 @@ body {
   flex-direction: column;
   gap: 1.375rem;
 }
+.menu__list::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 0.625rem;
+  width: 50px;
+  height: 60px;
+  transform: translate(-50%);
+  background: url("../../img/BZ.svg") no-repeat;
+  background-size: contain;
+}
 @media (max-width: 86.25rem) {
   .menu li:last-child {
     display: flex;
@@ -727,18 +738,6 @@ body {
     width: 100%;
   }
 }
-.vision__image::before {
-  position: absolute;
-  content: "";
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(192, 54, 73, 0.9);
-  -webkit-filter: blur(100px);
-  -moz-filter: blur(100px);
-  filter: blur(100px);
-}
 .vision__image::after {
   position: absolute;
   content: "";
@@ -783,7 +782,60 @@ body {
   height: 100%;
 }
 .image-vision__img img {
+  position: absolute;
   object-fit: contain;
+  left: -250px;
+  top: -200px;
+  width: 1000px;
+  height: 1000px;
+}
+@media (max-width: 1440px) {
+  .image-vision__img img {
+    left: calc(0px + -250 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .image-vision__img img {
+    top: calc(-100px + -100 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .image-vision__img img {
+    width: calc(300px + 700 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1440px) {
+  .image-vision__img img {
+    height: calc(300px + 700 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) {
+  .image-vision__img img {
+    left: -80px;
+    top: -240px;
+    width: 850px;
+    height: 850px;
+  }
+}
+@media (max-width: 1024px) and (max-width: 1440px) {
+  .image-vision__img img {
+    left: calc(-200px + 120 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) and (max-width: 1440px) {
+  .image-vision__img img {
+    top: calc(-170px + -70 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) and (max-width: 1440px) {
+  .image-vision__img img {
+    width: calc(700px + 150 * ((100vw - 320px) / 1120));
+  }
+}
+@media (max-width: 1024px) and (max-width: 1440px) {
+  .image-vision__img img {
+    height: calc(700px + 150 * ((100vw - 320px) / 1120));
+  }
 }
 
 /* behandlung */
@@ -1557,32 +1609,12 @@ body {
 .team-page {
   overflow: hidden;
 }
-.team-page__logo {
-  margin-top: 65px;
-  margin-left: 76px;
-  width: 100%;
-  max-width: 10.875rem;
-  min-height: 4.3125rem;
-}
-@media (max-width: 1440px) {
-  .team-page__logo {
-    margin-top: calc(120px + -55 * ((100vw - 320px) / 1120));
-  }
-}
-@media (max-width: 1440px) {
-  .team-page__logo {
-    margin-left: calc(15px + 61 * ((100vw - 320px) / 1120));
-  }
-}
-.team-page__logo img {
-  object-fit: contain;
-}
 .team-page__body {
   display: flex;
   flex-direction: column;
   gap: 1.875rem;
   padding-left: 423px;
-  padding-top: 41px;
+  padding-top: 175px;
   padding-bottom: 50px;
 }
 @media (max-width: 1440px) {
@@ -1592,7 +1624,7 @@ body {
 }
 @media (max-width: 1440px) {
   .team-page__body {
-    padding-top: calc(30px + 11 * ((100vw - 320px) / 1120));
+    padding-top: calc(80px + 95 * ((100vw - 320px) / 1120));
   }
 }
 @media (max-width: 1440px) {
@@ -1602,7 +1634,7 @@ body {
 }
 @media (max-width: 1024px) {
   .team-page__body {
-    padding: 1.875rem 0.9375rem 1.5625rem 0.9375rem;
+    padding: 5rem 0.9375rem 1.5625rem 0.9375rem;
   }
 }
 .team-page__row {

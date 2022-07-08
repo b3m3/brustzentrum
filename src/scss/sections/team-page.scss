@@ -1,26 +1,27 @@
 .team-page {
   overflow: hidden;
-  &__logo {
-    @include fit('margin-top', 65, 120, 1);
-    @include fit('margin-left', 76, 15, 1);
-    width: 100%;
-    max-width: rem(174);
-    min-height: rem(69);
+  
+  // &__logo {
+  //   @include fit('margin-top', 65, 120, 1);
+  //   @include fit('margin-left', 76, 15, 1);
+  //   width: 100%;
+  //   max-width: rem(174);
+  //   min-height: rem(69);
 
-    & img {
-      object-fit: contain;
-    }
-  }
+  //   & img {
+  //     object-fit: contain;
+  //   }
+  // }
   &__body {
     display: flex;
     flex-direction: column;
     gap: rem(30);
     @include fit('padding-left', 423, -423, 1);
-    @include fit('padding-top', 41, 30, 1);
+    @include fit('padding-top', 175, 80, 1);
     @include fit('padding-bottom', 50, 25, 1);
 
     @include laptop {
-      padding: rem(30) rem(15) rem(25) rem(15);
+      padding: rem(80) rem(15) rem(25) rem(15);
     }
   }
   &__row{
