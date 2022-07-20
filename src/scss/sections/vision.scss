@@ -48,7 +48,7 @@
       position: absolute;
       content: '';
       @include fit('left', 0, 200, 1);
-      top: -11px;
+      top: 0;
       width: calc(100% + 40px);
       height: calc(100% + 50px);
       background: url('../img/vision/decore.svg') no-repeat;
@@ -77,20 +77,19 @@
 
     & img {
       position: absolute;
-      object-fit: cover;
-      @include fit('top', -150, -100, 1);
-      @include fit('left', -220, 100, 1);
+      object-fit: contain;
+      @include fit('top', -70, -100, 1);
+      @include fit('left', -340, 100, 1);
 
       @include fit('width', 920, 200, 1);
       @include fit('height', 920, 200, 1);
 
       @include laptop {
-        object-fit: contain;
-        @include fit('width', 800, 600, 1);
+        @include fit('width', 700, 600, 1);
         @include fit('height', 800, 600, 1);
 
-        @include fit('top', -200, -100, 1);
-        @include fit('left', -50, -150, 1);
+        @include fit('top', -150, -80, 1);
+        @include fit('left', -110, -240, 1);
       }
     }
   }

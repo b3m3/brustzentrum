@@ -337,7 +337,7 @@ body {
   font-family: "Assistant";
   font-weight: 400;
   color: #fff;
-  background-color: #bd5b6a;
+  background-color: #bc5c6a;
 }
 
 .container {
@@ -388,14 +388,14 @@ body {
   font-size: 40px;
   line-height: 52px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .title {
-    font-size: calc(28px + 12 * ((100vw - 320px) / 1120));
+    font-size: calc(28px + 12 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .title {
-    line-height: calc(40px + 12 * ((100vw - 320px) / 1120));
+    line-height: calc(40px + 12 * ((100vw - 320px) / 930));
   }
 }
 
@@ -403,14 +403,14 @@ body {
   font-size: 20px;
   line-height: 32px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .text {
-    font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+    font-size: calc(18px + 2 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .text {
-    line-height: calc(28px + 4 * ((100vw - 320px) / 1120));
+    line-height: calc(28px + 4 * ((100vw - 320px) / 930));
   }
 }
 
@@ -682,9 +682,9 @@ body {
   justify-content: end;
   grid-template: auto/minmax(auto, 31.25rem) minmax(auto, 32.6875rem);
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .vision__main {
-    padding-bottom: calc(50px + 40 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(50px + 40 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -705,24 +705,24 @@ body {
   margin-right: -94px;
   margin-left: 94px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .vision__info {
-    gap: calc(20px + 13 * ((100vw - 320px) / 1120));
+    gap: calc(20px + 13 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .vision__info {
-    padding-top: calc(-130px + 363 * ((100vw - 320px) / 1120));
+    padding-top: calc(-130px + 363 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .vision__info {
-    margin-right: calc(0px + -94 * ((100vw - 320px) / 1120));
+    margin-right: calc(0px + -94 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .vision__info {
-    margin-left: calc(-20px + 114 * ((100vw - 320px) / 1120));
+    margin-left: calc(-20px + 114 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -748,15 +748,15 @@ body {
   position: absolute;
   content: "";
   left: 0px;
-  top: -11px;
+  top: 0;
   width: calc(100% + 40px);
   height: calc(100% + 50px);
   background: url("../img/vision/decore.svg") no-repeat;
   background-size: contain;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .vision__image::after {
-    left: calc(200px + -200 * ((100vw - 320px) / 1120));
+    left: calc(200px + -200 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -764,9 +764,9 @@ body {
     left: 170px;
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .vision__image::after {
-    left: calc(0px + 170 * ((100vw - 320px) / 1120));
+    left: calc(0px + 170 * ((100vw - 320px) / 930));
   }
 }
 
@@ -784,59 +784,58 @@ body {
 }
 .image-vision__img img {
   position: absolute;
-  object-fit: cover;
-  top: -150px;
-  left: -220px;
+  object-fit: contain;
+  top: -70px;
+  left: -340px;
   width: 920px;
   height: 920px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .image-vision__img img {
-    top: calc(-100px + -50 * ((100vw - 320px) / 1120));
+    top: calc(-100px + 30 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .image-vision__img img {
-    left: calc(100px + -320 * ((100vw - 320px) / 1120));
+    left: calc(100px + -440 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .image-vision__img img {
-    width: calc(200px + 720 * ((100vw - 320px) / 1120));
+    width: calc(200px + 720 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .image-vision__img img {
-    height: calc(200px + 720 * ((100vw - 320px) / 1120));
+    height: calc(200px + 720 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
   .image-vision__img img {
-    object-fit: contain;
-    width: 800px;
+    width: 700px;
     height: 800px;
-    top: -200px;
-    left: -50px;
+    top: -150px;
+    left: -110px;
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    width: calc(600px + 200 * ((100vw - 320px) / 1120));
+    width: calc(600px + 100 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    height: calc(600px + 200 * ((100vw - 320px) / 1120));
+    height: calc(600px + 200 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    top: calc(-100px + -100 * ((100vw - 320px) / 1120));
+    top: calc(-80px + -70 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    left: calc(-150px + 100 * ((100vw - 320px) / 1120));
+    left: calc(-240px + 130 * ((100vw - 320px) / 930));
   }
 }
 
@@ -878,9 +877,9 @@ body {
     width: 870px;
   }
 }
-@media (max-width: 90rem) and (max-width: 1440px) {
+@media (max-width: 90rem) and (max-width: 1250px) {
   .behandlung__wrapp::after {
-    width: calc(300px + 570 * ((100vw - 320px) / 1120));
+    width: calc(300px + 570 * ((100vw - 320px) / 930));
   }
 }
 .behandlung__main {
@@ -893,19 +892,19 @@ body {
   padding-left: 626px;
   padding-right: 0.9375rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .behandlung__main {
-    padding-top: calc(15px + 72 * ((100vw - 320px) / 1120));
+    padding-top: calc(15px + 72 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .behandlung__main {
-    padding-bottom: calc(15px + 72 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(15px + 72 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .behandlung__main {
-    padding-left: calc(30px + 596 * ((100vw - 320px) / 1120));
+    padding-left: calc(30px + 596 * ((100vw - 320px) / 930));
   }
 }
 .behandlung__body {
@@ -914,9 +913,9 @@ body {
   flex-direction: column;
   gap: 44px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .behandlung__body {
-    gap: calc(20px + 24 * ((100vw - 320px) / 1120));
+    gap: calc(20px + 24 * ((100vw - 320px) / 930));
   }
 }
 
@@ -934,9 +933,9 @@ body {
   margin-bottom: 82px;
   padding-left: 0.9375rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .brustdiagnostik__main {
-    margin-bottom: calc(50px + 32 * ((100vw - 320px) / 1120));
+    margin-bottom: calc(50px + 32 * ((100vw - 320px) / 930));
   }
 }
 .brustdiagnostik__main img {
@@ -957,9 +956,9 @@ body {
   grid-template: minmax(33.9375rem, auto)/minmax(auto, 35.875rem) minmax(auto, 32.75rem);
   margin-right: -8.8125rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .brustdiagnostik__top {
-    gap: calc(30px + 39 * ((100vw - 320px) / 1120));
+    gap: calc(30px + 39 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -977,14 +976,14 @@ body {
   grid-template: minmax(31.3125rem, auto)/minmax(auto, 29.1875rem) minmax(auto, 29.875rem);
   padding-right: 211px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .brustdiagnostik__bottom {
-    gap: calc(30px + 21 * ((100vw - 320px) / 1120));
+    gap: calc(30px + 21 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .brustdiagnostik__bottom {
-    padding-right: calc(-300px + 511 * ((100vw - 320px) / 1120));
+    padding-right: calc(-300px + 511 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1069,9 +1068,9 @@ body {
     margin-bottom: 228px;
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .brustchirurgie {
-    margin-bottom: calc(50px + 178 * ((100vw - 320px) / 1120));
+    margin-bottom: calc(50px + 178 * ((100vw - 320px) / 930));
   }
 }
 .brustchirurgie__top {
@@ -1112,9 +1111,9 @@ body {
   margin-left: -10px;
   max-height: 26.5625rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .brustchirurgie__bottom {
-    margin-left: calc(0px + -10 * ((100vw - 320px) / 1120));
+    margin-left: calc(0px + -10 * ((100vw - 320px) / 930));
   }
 }
 .brustchirurgie__bottom::before {
@@ -1156,29 +1155,29 @@ body {
   padding-right: 414px;
   margin-right: -264px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .top-brustchirurgie__body {
-    padding-left: calc(15px + 49 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 49 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .top-brustchirurgie__body {
-    padding-top: calc(15px + 38 * ((100vw - 320px) / 1120));
+    padding-top: calc(15px + 38 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .top-brustchirurgie__body {
-    padding-bottom: calc(15px + 54 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(15px + 54 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .top-brustchirurgie__body {
-    padding-right: calc(15px + 399 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 399 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .top-brustchirurgie__body {
-    margin-right: calc(15px + -279 * ((100vw - 320px) / 1120));
+    margin-right: calc(15px + -279 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1189,9 +1188,9 @@ body {
     border-radius: 2.5rem 0 0 2.5rem;
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .top-brustchirurgie__body {
-    padding-right: calc(15px + 135 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 135 * ((100vw - 320px) / 930));
   }
 }
 
@@ -1203,14 +1202,14 @@ body {
   padding-right: 66px;
   padding-left: 25px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .bottom-brustchirurgie__main {
-    padding-right: calc(15px + 51 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 51 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .bottom-brustchirurgie__main {
-    padding-left: calc(15px + 10 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 10 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1224,9 +1223,9 @@ body {
   gap: 2rem;
   grid-template: minmax(31.1875rem, auto)/minmax(auto, 31.25rem) minmax(auto, 26.375rem);
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .bottom-brustchirurgie__body {
-    padding-top: calc(30px + 19 * ((100vw - 320px) / 1120));
+    padding-top: calc(30px + 19 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1237,9 +1236,9 @@ body {
 .bottom-brustchirurgie__text {
   padding-top: 28px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .bottom-brustchirurgie__text {
-    padding-top: calc(0px + 28 * ((100vw - 320px) / 1120));
+    padding-top: calc(0px + 28 * ((100vw - 320px) / 930));
   }
 }
 .bottom-brustchirurgie__image img {
@@ -1268,9 +1267,9 @@ body {
   position: relative;
   margin-bottom: 60px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team {
-    margin-bottom: calc(50px + 10 * ((100vw - 320px) / 1120));
+    margin-bottom: calc(50px + 10 * ((100vw - 320px) / 930));
   }
 }
 .team__bg {
@@ -1293,9 +1292,9 @@ body {
   padding-right: 0.9375rem;
   transition: 0.3s;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team__main {
-    padding-left: calc(-450px + 871 * ((100vw - 320px) / 1120));
+    padding-left: calc(-450px + 871 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1303,9 +1302,9 @@ body {
     padding-left: 521px;
   }
 }
-@media (max-width: 1024px) and (max-width: 1440px) {
+@media (max-width: 1024px) and (max-width: 1250px) {
   .team__main {
-    padding-left: calc(15px + 506 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 506 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 767px) {
@@ -1314,17 +1313,17 @@ body {
     padding-bottom: 0.9375rem;
   }
 }
-@media (max-width: 767px) and (max-width: 1440px) {
+@media (max-width: 767px) and (max-width: 1250px) {
   .team__main {
-    padding-left: calc(15px + 185 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 185 * ((100vw - 320px) / 930));
   }
 }
 .team__top {
   margin-bottom: 41px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team__top {
-    margin-bottom: calc(30px + 11 * ((100vw - 320px) / 1120));
+    margin-bottom: calc(30px + 11 * ((100vw - 320px) / 930));
   }
 }
 .team__body {
@@ -1459,14 +1458,14 @@ body {
   gap: 69px;
   grid-template: minmax(25.0625rem, auto)/minmax(auto, 34.25rem) minmax(auto, 30.625rem) minmax(auto, 14.6875rem);
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .footer__main {
-    padding-bottom: calc(50px + 32 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(50px + 32 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .footer__main {
-    gap: calc(-69px + 138 * ((100vw - 320px) / 1120));
+    gap: calc(-69px + 138 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1522,9 +1521,9 @@ body {
   font-size: 2.875rem;
   left: 333px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .map-footer__location {
-    left: calc(359px + -26 * ((100vw - 320px) / 1120));
+    left: calc(359px + -26 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 84.3125rem) {
@@ -1532,9 +1531,9 @@ body {
     left: 360px;
   }
 }
-@media (max-width: 84.3125rem) and (max-width: 1440px) {
+@media (max-width: 84.3125rem) and (max-width: 1250px) {
   .map-footer__location {
-    left: calc(-40px + 400 * ((100vw - 320px) / 1120));
+    left: calc(-40px + 400 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1547,9 +1546,9 @@ body {
     left: 750px;
   }
 }
-@media (max-width: 36.125rem) and (max-width: 1440px) {
+@media (max-width: 36.125rem) and (max-width: 1250px) {
   .map-footer__location {
-    left: calc(205px + 545 * ((100vw - 320px) / 1120));
+    left: calc(205px + 545 * ((100vw - 320px) / 930));
   }
 }
 
@@ -1566,28 +1565,28 @@ body {
   font-size: 24px;
   line-height: 32px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .contacts-footer__subtitle {
-    font-size: calc(22px + 2 * ((100vw - 320px) / 1120));
+    font-size: calc(22px + 2 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .contacts-footer__subtitle {
-    line-height: calc(28px + 4 * ((100vw - 320px) / 1120));
+    line-height: calc(28px + 4 * ((100vw - 320px) / 930));
   }
 }
 .contacts-footer__text {
   font-size: 24px;
   line-height: 32px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .contacts-footer__text {
-    font-size: calc(18px + 6 * ((100vw - 320px) / 1120));
+    font-size: calc(18px + 6 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .contacts-footer__text {
-    line-height: calc(28px + 4 * ((100vw - 320px) / 1120));
+    line-height: calc(28px + 4 * ((100vw - 320px) / 930));
   }
 }
 .contacts-footer__link {
@@ -1619,19 +1618,19 @@ body {
   padding-top: 175px;
   padding-bottom: 50px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__body {
-    padding-left: calc(-423px + 846 * ((100vw - 320px) / 1120));
+    padding-left: calc(-423px + 846 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__body {
-    padding-top: calc(80px + 95 * ((100vw - 320px) / 1120));
+    padding-top: calc(80px + 95 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__body {
-    padding-bottom: calc(25px + 25 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(25px + 25 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1652,14 +1651,14 @@ body {
   margin-right: -1.3125rem;
   padding-right: 1.3125rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__drs {
-    margin-top: calc(0px + 15 * ((100vw - 320px) / 1120));
+    margin-top: calc(0px + 15 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__drs {
-    margin-bottom: calc(0px + 20 * ((100vw - 320px) / 1120));
+    margin-bottom: calc(0px + 20 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1688,24 +1687,24 @@ body {
   opacity: 0;
   pointer-events: none;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__hover {
-    padding-top: calc(15px + 41 * ((100vw - 320px) / 1120));
+    padding-top: calc(15px + 41 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__hover {
-    padding-left: calc(15px + 36 * ((100vw - 320px) / 1120));
+    padding-left: calc(15px + 36 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__hover {
-    padding-right: calc(15px + 131 * ((100vw - 320px) / 1120));
+    padding-right: calc(15px + 131 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .team-page__hover {
-    padding-bottom: calc(15px + 95 * ((100vw - 320px) / 1120));
+    padding-bottom: calc(15px + 95 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) {
@@ -1773,9 +1772,9 @@ body {
   opacity: 1;
   transition: 0.8s ease;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .drs-team-page__p.show-pointer {
-    bottom: calc(40px + -32 * ((100vw - 320px) / 1120));
+    bottom: calc(40px + -32 * ((100vw - 320px) / 930));
   }
 }
 
@@ -1784,9 +1783,9 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .hover-team-page__box {
-    gap: calc(15px + 15 * ((100vw - 320px) / 1120));
+    gap: calc(15px + 15 * ((100vw - 320px) / 930));
   }
 }
 .hover-team-page__text {
@@ -1797,14 +1796,14 @@ body {
   font-size: 20px;
   line-height: 32px;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .hover-team-page__subtitle {
-    font-size: calc(18px + 2 * ((100vw - 320px) / 1120));
+    font-size: calc(18px + 2 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .hover-team-page__subtitle {
-    line-height: calc(28px + 4 * ((100vw - 320px) / 1120));
+    line-height: calc(28px + 4 * ((100vw - 320px) / 930));
   }
 }
 .hover-team-page__subtitle_big {
@@ -1812,13 +1811,13 @@ body {
   line-height: 32px;
   max-width: 26.5625rem;
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .hover-team-page__subtitle_big {
-    font-size: calc(20px + 4 * ((100vw - 320px) / 1120));
+    font-size: calc(20px + 4 * ((100vw - 320px) / 930));
   }
 }
-@media (max-width: 1440px) {
+@media (max-width: 1250px) {
   .hover-team-page__subtitle_big {
-    line-height: calc(28px + 4 * ((100vw - 320px) / 1120));
+    line-height: calc(28px + 4 * ((100vw - 320px) / 930));
   }
 }
