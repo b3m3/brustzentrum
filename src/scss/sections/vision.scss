@@ -85,11 +85,11 @@
       @include fit('height', 920, 200, 1);
 
       @include laptop {
-        @include fit('width', 700, 600, 1);
-        @include fit('height', 800, 600, 1);
+        @include fit('width', 600, 600, 1);
+        @include fit('height', 700, 600, 1);
 
-        @include fit('top', -150, -80, 1);
-        @include fit('left', -110, -240, 1);
+        @include fit('top', -110, -80, 1);
+        @include fit('left', -50, -230, 1);
       }
     }
   }

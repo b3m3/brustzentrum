@@ -812,30 +812,30 @@ body {
 }
 @media (max-width: 1024px) {
   .image-vision__img img {
-    width: 700px;
-    height: 800px;
-    top: -150px;
-    left: -110px;
+    width: 600px;
+    height: 700px;
+    top: -110px;
+    left: -50px;
   }
 }
 @media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    width: calc(600px + 100 * ((100vw - 320px) / 930));
+    width: calc(600px + 0 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    height: calc(600px + 200 * ((100vw - 320px) / 930));
+    height: calc(600px + 100 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    top: calc(-80px + -70 * ((100vw - 320px) / 930));
+    top: calc(-80px + -30 * ((100vw - 320px) / 930));
   }
 }
 @media (max-width: 1024px) and (max-width: 1250px) {
   .image-vision__img img {
-    left: calc(-240px + 130 * ((100vw - 320px) / 930));
+    left: calc(-230px + 180 * ((100vw - 320px) / 930));
   }
 }
 
