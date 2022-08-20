@@ -1,5 +1,4 @@
 # brustzentrum
 
-Brustzentrumheidelberg.de | 
-brustzentrumHD.de | 
+Brustzentrumheidelberg.de |
 senologie-heidelberg.de
