@@ -1,0 +1,143 @@
+// Adapt-property
+
+$maxWidth: 1600;
+$maxWidthContainer: 1250;
+
+@mixin fit($property, $statrSize, $minsize, $type) {
+  $addSize: $statrSize - $minsize;
+  @if $type==1 {
+    #{$property}: $statrSize + px;
+    @media (max-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minsize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+    }
+  } @else if $type==2 {
+    #{$property}: $statrSize + px;
+    @media(min-width: #{$maxWidthContainer + px}) {
+      #{$property}: calc(#{$minsize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+    }
+  } @else {
+    #{$property}: calc(#{$minsize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+  }
+}
+
+// GET PRECENT
+
+@mixin precent($property, $px, $size) {
+  #{$property}: calc($px / $size * 100%)
+}
+
+// MEDIA QUIRE
+
+@mixin laptop {
+  @media (max-width: 1024px){
+      @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 767px){
+      @content;
+  }
+}
+
+@mixin mobile-l {
+  @media (max-width: 425px){
+      @content;
+  }
+}
+
+@mixin mobile-m {
+  @media (max-width: 375px){
+      @content;
+  }
+}
+
+@mixin mq($width) {
+  @media (max-width: $width){
+      @content;
+  }
+}
+
+@mixin pc{
+  @media (any-hover: hover){
+    @content;
+  }
+}
+
+@mixin sensor{
+  @media (any-hover: none){
+    @content;
+  }
+}
+
+// CONVERT UNITS
+
+@function rem($px) {
+  $result: calc($px / 16) + rem;
+  @return $result;
+}
+
+@function em($px) {
+  $result: calc($px / 16) + em;
+  @return $result;
+}
+
+// TRIANGLE
+
+@mixin triangle($width, $direction, $color){ 
+  width: 0;height: 0;
+
+  @if $direction == up { 
+    border-left: $width solid transparent; 
+    border-right: $width solid transparent; 
+    border-bottom: $width solid $color; 
+  } 
+  @if $direction == down { 
+    border-left: $width solid transparent; 
+    border-right: $width solid transparent; 
+    border-top: $width solid $color; 
+  } 
+  @if $direction == left { 
+    border-top: $width solid transparent; 
+    border-bottom: $width solid transparent; 
+    border-right: $width solid $color; 
+  } 
+  @if $direction == right { 
+    border-top: $width solid transparent; 
+    border-bottom: $width solid transparent; 
+    border-left: $width solid $color; 
+  } 
+}
+
+// ARROW
+
+@mixin arrow($direction, $color, $border, $size){ 
+  @if $direction == up { 
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(-135deg);
+  }
+  @if $direction == down {
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(45deg);
+  }
+  @if $direction == left { 
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(135deg);
+  } 
+  @if $direction == right { 
+    border: solid $color;
+    border-width: 0 $border $border 0;
+    display: inline-block;
+    padding: $size;
+    transform: rotate(-45deg);
+  } 
+}

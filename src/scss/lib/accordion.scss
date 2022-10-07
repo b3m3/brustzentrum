@@ -1,0 +1,31 @@
+.accordion {
+  pointer-events: none;
+  @media(max-width: 475px) {
+    position: relative;
+    pointer-events: all;
+    &::before {
+      position: absolute;
+      content: '';
+      right: rem(10);
+      top: rem(25);
+      border: solid rgb(255, 255, 255);
+      border-width: 0 2px 2px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(45deg);
+      -webkit-transform: rotate(45deg);
+      transition: .4s ease-out;
+    }
+    &.active-accordion::before {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+    }
+  }
+}
+
+.accordion-content {
+  transition: .5s ease;
+  @media(max-width: 475px) {
+    overflow: hidden;
+  }
+}

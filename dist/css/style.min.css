@@ -19,21 +19,6 @@ a:focus, a:active {
   outline: none;
 }
 
-nav, footer, header, aside {
-  display: block;
-}
-
-html, body {
-  height: 100%;
-  width: 100%;
-  font-size: 100%;
-  line-height: 1;
-  font-size: 14px;
-  -ms-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
 input, button, textarea {
   font-family: inherit;
 }
@@ -61,10 +46,6 @@ a:hover {
 
 ul li {
   list-style: none;
-}
-
-img {
-  vertical-align: top;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -284,10 +265,8 @@ h1, h2, h3, h4, h5, h6 {
 /* CSS Mode */
 .swiper-css-mode > .swiper-wrapper {
   overflow: auto;
-  scrollbar-width: none;
-  /* For Firefox */
-  -ms-overflow-style: none;
-  /* For Internet Explorer and Edge */
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 .swiper-css-mode > .swiper-wrapper::-webkit-scrollbar {
   display: none;

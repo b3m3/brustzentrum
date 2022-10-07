@@ -1,0 +1,58 @@
+.animate {
+  opacity: 0;
+
+  // animation
+
+  &.tor {
+    transform: translate(-75px);
+  }
+  &.tol {
+    transform: translate(75px);
+  }
+  &.tot {
+    transform: translate(0, 75px);
+  }
+  &.tob {
+    opacity: 0;
+    transform: translate(0, -75px);
+  }
+  &.tos {
+    transform: scale(.8);
+  }
+
+  // transitions
+
+  &.tn4 {
+    transition: .4s ease-out;
+  }
+  &.tn6 {
+    transition: .6s ease-out;
+  }
+  &.tn8 {
+    transition: .8s ease-out;
+  }
+  &.tn10 {
+    transition: 1s ease-out;
+  }
+  &.tn12 {
+    transition: 1.2s ease-out;
+  }
+  &.tn14 {
+    transition: 1.4s ease-out;
+  }
+  &.tn16 {
+    transition: 1.6s ease-out;
+  }
+  &.tn18 {
+    transition: 1.8s ease-out;
+  }
+  &.tn20 {
+    transition: 2s ease-out;
+  }
+}
+
+.animate-off {
+  opacity: 1 !important;
+  transform: translate(0) !important;
+  transform: scale(1) !important;
+}
